@@ -1,0 +1,56 @@
+Performance Statistics   2017-03-14 10:56:00 - 2017-03-14 10:58:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        26.0          26          26         0.0           1
+loginWindow#inject                                      18.0          18          18         0.0           1
+loginWindow#load                                      1770.0        1770        1770         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         26.0          26          26         0.0           1
+
+Performance Statistics   2017-03-14 10:58:00 - 2017-03-14 11:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+mainWindow#init                                         53.0          53          53         0.0           1
+mainWindow#inject                                        2.0           2           2         0.0           1
+mainWindow#load                                        646.0         646         646         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                           8.0           8           8         0.0           1
+
+Performance Statistics   2017-03-14 11:00:00 - 2017-03-14 11:02:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:02:00 - 2017-03-14 11:04:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:04:00 - 2017-03-14 11:06:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:06:00 - 2017-03-14 11:08:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:08:00 - 2017-03-14 11:10:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:10:00 - 2017-03-14 11:12:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:12:00 - 2017-03-14 11:14:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+sec$User.browse#companion                                6.0           6           6         0.0           1
+sec$User.browse#init                                    28.0          28          28         0.0           1
+sec$User.browse#inject                                  54.0          54          54         0.0           1
+sec$User.browse#load                                   801.0         801         801         0.0           1
+sec$User.browse#ready                                    0.0           0           0         0.0           1
+sec$User.browse#uiPermissions                            0.0           0           0         0.0           1
+sec$User.browse#xml                                     32.0          32          32         0.0           1
+sec$User.browse@usersDs                                512.0         512         512         0.0           1
+
+Performance Statistics   2017-03-14 11:14:00 - 2017-03-14 11:16:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:16:00 - 2017-03-14 11:18:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-14 11:18:00 - 2017-03-14 11:20:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+

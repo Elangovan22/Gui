@@ -1,0 +1,1 @@
+drop table ASSETMANAGEMENT_NEW__ASSET_SUPPLIER_LINK cascade ;

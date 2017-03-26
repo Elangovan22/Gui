@@ -1,0 +1,33 @@
+Performance Statistics   2017-03-17 15:58:00 - 2017-03-17 16:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        19.0          19          19         0.0           1
+loginWindow#inject                                      14.0          14          14         0.0           1
+loginWindow#load                                       442.0         442         442         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         17.0          17          17         0.0           1
+mainWindow#init                                         76.0          76          76         0.0           1
+mainWindow#inject                                        5.0           5           5         0.0           1
+mainWindow#load                                        346.0         346         346         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                           6.0           6           6         0.0           1
+sec$User.browse#companion                               12.0          12          12         0.0           1
+sec$User.browse#init                                    26.0          26          26         0.0           1
+sec$User.browse#inject                                  36.0          36          36         0.0           1
+sec$User.browse#load                                   879.0         879         879         0.0           1
+sec$User.browse#ready                                    0.0           0           0         0.0           1
+sec$User.browse#uiPermissions                            0.0           0           0         0.0           1
+sec$User.browse#xml                                     10.0          10          10         0.0           1
+sec$User.browse@usersDs                                623.0         623         623         0.0           1
+sec$User.edit#companion                                  2.0           2           2         0.0           1
+sec$User.edit#init                                     134.0         134         134         0.0           1
+sec$User.edit#inject                                     2.5           0           5         2.5           2
+sec$User.edit#load                                     145.0         145         145         0.0           1
+sec$User.edit#ready                                      0.0           0           0         0.0           1
+sec$User.edit#setItem                                  303.0         303         303         0.0           1
+sec$User.edit#uiPermissions                              0.0           0           0         0.0           1
+sec$User.edit#xml                                       11.0          11          11         0.0           1
+sec$User.edit.windowActions#load                         3.0           3           3         0.0           1
+windowActions#xml                                        1.0           1           1         0.0           1
+

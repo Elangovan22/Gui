@@ -1,0 +1,24 @@
+Performance Statistics   2017-03-15 15:34:00 - 2017-03-15 15:36:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        24.0          24          24         0.0           1
+loginWindow#inject                                      24.0          24          24         0.0           1
+loginWindow#load                                       707.0         707         707         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         37.0          37          37         0.0           1
+mainWindow#init                                         81.0          81          81         0.0           1
+mainWindow#inject                                       14.0          14          14         0.0           1
+mainWindow#load                                        762.0         762         762         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          10.0          10          10         0.0           1
+
+Performance Statistics   2017-03-15 15:36:00 - 2017-03-15 15:38:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                         2.0           2           2         0.0           1
+loginWindow#inject                                      39.0          39          39         0.0           1
+loginWindow#load                                        36.0          36          36         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                          0.0           0           0         0.0           1
+

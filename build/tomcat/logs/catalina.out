@@ -1,0 +1,188 @@
+Listening for transport dt_socket at address: 8787
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/8.0.35
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          May 11 2016 21:57:08 UTC
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         8.0.35.0
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.4.0-65-generic
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_121-b13
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xmx512m
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dfile.encoding=UTF-8
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcom.sun.management.jmxremote
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+Mar 26, 2017 8:11:54 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Mar 26, 2017 8:11:54 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8080"]
+Mar 26, 2017 8:11:54 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Mar 26, 2017 8:11:54 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-nio-8009"]
+Mar 26, 2017 8:11:54 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1265 ms
+Mar 26, 2017 8:11:54 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 26, 2017 8:11:54 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/8.0.35
+Mar 26, 2017 8:11:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+20:11:56.589 INFO  c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+20:11:56.654 INFO  c.h.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+20:11:56.656 INFO  c.h.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+20:11:56.816 INFO  c.h.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+20:11:57.255 INFO  c.h.c.c.s.p.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+20:11:57.613 INFO  c.h.c.c.s.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@4cecffaa: startup date [Sun Mar 26 20:11:57 IST 2017]; root of context hierarchy
+20:12:09.591 INFO  c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+20:12:18.583 INFO  c.h.c.c.s.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+20:12:19.418 INFO  c.h.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+20:12:20.476 INFO  c.h.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+20:12:21.149 INFO  c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+20:12:21.647 INFO  c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 497ms
+20:12:24.026 INFO  c.h.c.c.s.DefaultPermissionValuesConfig - Initializing default permission values
+20:12:24.349 INFO  c.h.c.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+20:12:24.350 INFO  c.h.cuba.core.sys.AppContextLoader - AppContext initialized
+20:12:24.420 INFO  c.h.c.c.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+20:12:24.443 INFO  c.h.c.c.s.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 20:12:24 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@4cecffaa
+20:12:24.606 INFO  c.h.c.c.s.r.RemoteServicesBeanCreator - Configuring remote services
+20:12:26.297 INFO  c.h.c.c.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1875 ms
+Mar 26, 2017 8:12:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 31,530 ms
+Mar 26, 2017 8:12:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework addAtmosphereHandler
+INFO: Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework addAtmosphereHandler
+INFO: Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+Mar 26, 2017 8:12:26 PM org.atmosphere.util.IOUtils readServiceFile
+INFO: META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework autoConfigureService
+INFO: Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework initWebSocket
+INFO: Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+Mar 26, 2017 8:12:26 PM org.atmosphere.container.JSR356AsyncSupport <init>
+INFO: JSR 356 Mapping path /{path}
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework configureAtmosphereInterceptor
+INFO: Installing Default AtmosphereInterceptors
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework configureAtmosphereInterceptor
+INFO: Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework newAInterceptor
+INFO: 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework configureAtmosphereInterceptor
+INFO: Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Broadcaster Polling Wait Time 100
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Shared ExecutorService supported: true
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Messaging Thread Pool Size: Unlimited
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Async I/O Thread Pool Size: 200
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Invoke AtmosphereInterceptor on WebSocket message true
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: HttpSession supported: true
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework info
+INFO: Atmosphere Framework 2.2.7.vaadin1 started.
+Mar 26, 2017 8:12:26 PM org.atmosphere.cpr.AtmosphereFramework interceptor
+INFO: Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+20:12:27.024 INFO  c.h.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+20:12:27.052 INFO  c.h.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+20:12:27.060 INFO  c.h.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+20:12:27.085 INFO  c.h.c.c.s.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@19511bf: startup date [Sun Mar 26 20:12:27 IST 2017]; root of context hierarchy
+20:12:30.179 INFO  c.h.c.w.s.r.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+20:12:30.960 INFO  c.h.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+20:12:33.716 INFO  c.h.c.c.s.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+20:12:34.852 INFO  c.h.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+20:12:34.910 INFO  c.h.cuba.web.sys.WebAppContextLoader - AppContext initialized
+20:12:34.970 INFO  c.h.c.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+20:12:34.976 INFO  c.h.c.c.s.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 20:12:34 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@19511bf
+20:12:38.096 INFO  c.h.c.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 3126 ms
+20:12:38.102 INFO  c.h.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+20:12:38.106 INFO  c.h.c.c.s.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 20:12:38 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@19511bf
+20:12:42.220 INFO  c.h.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 4118 ms
+Mar 26, 2017 8:12:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 15,896 ms
+Mar 26, 2017 8:12:42 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8080"]
+Mar 26, 2017 8:12:42 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-nio-8009"]
+Mar 26, 2017 8:12:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 47555 ms
+Mar 26, 2017 8:12:42 PM com.vaadin.server.DefaultDeploymentConfiguration checkProductionMode
+WARNING: 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+20:12:44.885 INFO  c.h.cuba.core.sys.MetadataImpl - Initializing metadata
+20:12:45.274 INFO  c.h.cuba.core.sys.MetadataImpl - Metadata initialized in 389ms
+20:12:50.424 INFO  c.h.c.security.app.LoginWorkerBean - Logged in: 161699d7-8c77-e1d9-009c-3b9c5ee9fdc0 [admin]
+20:12:51.221 INFO  c.h.c.c.sys.ViewRepositoryClientImpl - Initializing views
