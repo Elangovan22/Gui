@@ -755,3 +755,660 @@ Vaadin is running in DEBUG MODE.
 Add productionMode=true to web.xml to disable debug features.
 To show debug window, add ?debug to your application URL.
 =================================================================
+26-Mar-2017 20:43:15.752 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 20:43:15.754 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:43:15.806 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 20:43:15.861 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 20:43:16.162 SEVERE [localhost-startStop-2] org.atmosphere.container.JSR356Endpoint.onError 
+ java.io.IOException: Key must be cancelled
+	at org.apache.coyote.http11.upgrade.NioServletOutputStream.doWriteInternal(NioServletOutputStream.java:84)
+	at org.apache.coyote.http11.upgrade.NioServletOutputStream.doWrite(NioServletOutputStream.java:61)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.writeInternal(AbstractServletOutputStream.java:165)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.write(AbstractServletOutputStream.java:132)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.onWritePossible(WsRemoteEndpointImplServer.java:98)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:79)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:453)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessage(WsRemoteEndpointImplBase.java:341)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:273)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:588)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:490)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:455)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:926)
+	at org.apache.tomcat.websocket.server.WsServerContainer.destroy(WsServerContainer.java:286)
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:48)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4858)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5495)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:224)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+26-Mar-2017 20:43:16.647 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:43:16.733 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 20:43:16.793 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:43:16.801 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 20:43:34.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.35
+26-Mar-2017 20:43:34.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2016 21:57:08 UTC
+26-Mar-2017 20:43:34.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.35.0
+26-Mar-2017 20:43:34.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Mar-2017 20:43:34.171 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-65-generic
+26-Mar-2017 20:43:34.173 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2017 20:43:34.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+26-Mar-2017 20:43:34.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+26-Mar-2017 20:43:34.177 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2017 20:43:34.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 20:43:34.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 20:43:34.182 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+26-Mar-2017 20:43:34.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2017 20:43:34.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+26-Mar-2017 20:43:34.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+26-Mar-2017 20:43:34.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+26-Mar-2017 20:43:34.188 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+26-Mar-2017 20:43:34.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+26-Mar-2017 20:43:34.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+26-Mar-2017 20:43:34.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 20:43:34.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 20:43:34.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+26-Mar-2017 20:43:34.195 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+26-Mar-2017 20:43:35.680 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:43:35.813 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 20:43:35.843 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 20:43:35.847 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 20:43:35.849 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3123 ms
+26-Mar-2017 20:43:35.962 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+26-Mar-2017 20:43:35.964 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.35
+26-Mar-2017 20:43:35.998 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+26-Mar-2017 20:44:07.318 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 31,317 ms
+26-Mar-2017 20:44:07.319 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+26-Mar-2017 20:44:07.713 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+26-Mar-2017 20:44:07.715 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+26-Mar-2017 20:44:07.728 INFO [localhost-startStop-1] org.atmosphere.util.IOUtils.readServiceFile META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+26-Mar-2017 20:44:07.785 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.autoConfigureService Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+26-Mar-2017 20:44:07.832 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.initWebSocket Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+26-Mar-2017 20:44:07.867 INFO [localhost-startStop-1] org.atmosphere.container.JSR356AsyncSupport.<init> JSR 356 Mapping path /{path}
+26-Mar-2017 20:44:07.919 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Installing Default AtmosphereInterceptors
+26-Mar-2017 20:44:07.921 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+26-Mar-2017 20:44:07.924 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+26-Mar-2017 20:44:07.928 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+26-Mar-2017 20:44:07.932 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+26-Mar-2017 20:44:07.934 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+26-Mar-2017 20:44:07.937 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+26-Mar-2017 20:44:07.942 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+26-Mar-2017 20:44:07.948 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+26-Mar-2017 20:44:07.950 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+26-Mar-2017 20:44:07.952 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+26-Mar-2017 20:44:07.955 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+26-Mar-2017 20:44:07.956 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+26-Mar-2017 20:44:07.966 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+26-Mar-2017 20:44:07.967 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+26-Mar-2017 20:44:07.968 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+26-Mar-2017 20:44:07.969 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Broadcaster Polling Wait Time 100
+26-Mar-2017 20:44:07.970 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Shared ExecutorService supported: true
+26-Mar-2017 20:44:07.971 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Messaging Thread Pool Size: Unlimited
+26-Mar-2017 20:44:07.972 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Async I/O Thread Pool Size: 200
+26-Mar-2017 20:44:07.973 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+26-Mar-2017 20:44:07.974 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+26-Mar-2017 20:44:07.986 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Invoke AtmosphereInterceptor on WebSocket message true
+26-Mar-2017 20:44:07.988 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info HttpSession supported: true
+26-Mar-2017 20:44:07.989 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+26-Mar-2017 20:44:07.990 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+26-Mar-2017 20:44:07.991 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere Framework 2.2.7.vaadin1 started.
+26-Mar-2017 20:44:08.001 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.interceptor Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+26-Mar-2017 20:44:22.097 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 14,778 ms
+26-Mar-2017 20:44:22.120 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:44:22.144 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 20:44:22.150 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 46300 ms
+26-Mar-2017 20:44:22.651 WARNING [http-nio-8080-exec-43] com.vaadin.server.DefaultDeploymentConfiguration.checkProductionMode 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+26-Mar-2017 20:47:57.570 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 20:47:57.572 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:47:57.575 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 20:47:57.627 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 20:47:57.874 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:47:57.900 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 20:47:57.906 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 20:47:57.911 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:07:24.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.35
+26-Mar-2017 21:07:25.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2016 21:57:08 UTC
+26-Mar-2017 21:07:25.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.35.0
+26-Mar-2017 21:07:25.008 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Mar-2017 21:07:25.010 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-65-generic
+26-Mar-2017 21:07:25.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2017 21:07:25.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+26-Mar-2017 21:07:25.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+26-Mar-2017 21:07:25.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2017 21:07:25.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:07:25.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:07:25.022 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+26-Mar-2017 21:07:25.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2017 21:07:25.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+26-Mar-2017 21:07:25.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+26-Mar-2017 21:07:25.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+26-Mar-2017 21:07:25.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+26-Mar-2017 21:07:25.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+26-Mar-2017 21:07:25.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+26-Mar-2017 21:07:25.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:07:25.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:07:25.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+26-Mar-2017 21:07:25.039 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+26-Mar-2017 21:07:25.493 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:07:25.541 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:07:25.548 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:07:25.556 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:07:25.561 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1416 ms
+26-Mar-2017 21:07:25.659 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+26-Mar-2017 21:07:25.662 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.35
+26-Mar-2017 21:07:25.699 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+26-Mar-2017 21:07:54.788 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 29,086 ms
+26-Mar-2017 21:07:54.790 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+26-Mar-2017 21:07:55.487 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+26-Mar-2017 21:07:55.488 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+26-Mar-2017 21:07:55.499 INFO [localhost-startStop-1] org.atmosphere.util.IOUtils.readServiceFile META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+26-Mar-2017 21:07:55.579 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.autoConfigureService Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+26-Mar-2017 21:07:55.621 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.initWebSocket Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+26-Mar-2017 21:07:55.650 INFO [localhost-startStop-1] org.atmosphere.container.JSR356AsyncSupport.<init> JSR 356 Mapping path /{path}
+26-Mar-2017 21:07:55.703 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Installing Default AtmosphereInterceptors
+26-Mar-2017 21:07:55.705 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+26-Mar-2017 21:07:55.707 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+26-Mar-2017 21:07:55.731 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+26-Mar-2017 21:07:55.733 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+26-Mar-2017 21:07:55.734 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+26-Mar-2017 21:07:55.737 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+26-Mar-2017 21:07:55.739 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+26-Mar-2017 21:07:55.744 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+26-Mar-2017 21:07:55.746 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+26-Mar-2017 21:07:55.748 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+26-Mar-2017 21:07:55.750 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+26-Mar-2017 21:07:55.752 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+26-Mar-2017 21:07:55.763 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+26-Mar-2017 21:07:55.764 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+26-Mar-2017 21:07:55.764 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+26-Mar-2017 21:07:55.765 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Broadcaster Polling Wait Time 100
+26-Mar-2017 21:07:55.767 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Shared ExecutorService supported: true
+26-Mar-2017 21:07:55.768 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Messaging Thread Pool Size: Unlimited
+26-Mar-2017 21:07:55.769 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Async I/O Thread Pool Size: 200
+26-Mar-2017 21:07:55.770 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+26-Mar-2017 21:07:55.771 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+26-Mar-2017 21:07:55.784 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Invoke AtmosphereInterceptor on WebSocket message true
+26-Mar-2017 21:07:55.785 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info HttpSession supported: true
+26-Mar-2017 21:07:55.786 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+26-Mar-2017 21:07:55.788 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+26-Mar-2017 21:07:55.789 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere Framework 2.2.7.vaadin1 started.
+26-Mar-2017 21:07:55.800 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.interceptor Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+26-Mar-2017 21:08:08.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 13,598 ms
+26-Mar-2017 21:08:08.406 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:08:08.432 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:08:08.434 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 42871 ms
+26-Mar-2017 21:08:10.585 WARNING [http-nio-8080-exec-22] com.vaadin.server.DefaultDeploymentConfiguration.checkProductionMode 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+26-Mar-2017 21:10:07.000 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 21:10:07.002 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:10:07.055 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:10:07.107 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 21:10:07.749 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:10:07.818 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:10:07.893 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:10:07.899 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:10:27.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.35
+26-Mar-2017 21:10:27.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2016 21:57:08 UTC
+26-Mar-2017 21:10:27.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.35.0
+26-Mar-2017 21:10:27.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Mar-2017 21:10:27.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-65-generic
+26-Mar-2017 21:10:27.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2017 21:10:27.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+26-Mar-2017 21:10:27.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+26-Mar-2017 21:10:27.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2017 21:10:27.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:10:27.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:10:27.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+26-Mar-2017 21:10:27.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2017 21:10:27.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+26-Mar-2017 21:10:27.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+26-Mar-2017 21:10:27.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+26-Mar-2017 21:10:27.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+26-Mar-2017 21:10:27.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+26-Mar-2017 21:10:27.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+26-Mar-2017 21:10:27.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:10:27.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:10:27.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+26-Mar-2017 21:10:27.517 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+26-Mar-2017 21:10:28.821 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:10:28.884 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:10:28.891 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:10:28.896 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:10:28.902 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2931 ms
+26-Mar-2017 21:10:29.017 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+26-Mar-2017 21:10:29.019 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.35
+26-Mar-2017 21:10:29.072 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+26-Mar-2017 21:11:01.087 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 32,011 ms
+26-Mar-2017 21:11:01.089 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+26-Mar-2017 21:11:01.408 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+26-Mar-2017 21:11:01.410 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+26-Mar-2017 21:11:01.425 INFO [localhost-startStop-1] org.atmosphere.util.IOUtils.readServiceFile META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+26-Mar-2017 21:11:01.502 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.autoConfigureService Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+26-Mar-2017 21:11:01.570 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.initWebSocket Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+26-Mar-2017 21:11:01.611 INFO [localhost-startStop-1] org.atmosphere.container.JSR356AsyncSupport.<init> JSR 356 Mapping path /{path}
+26-Mar-2017 21:11:01.690 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Installing Default AtmosphereInterceptors
+26-Mar-2017 21:11:01.694 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+26-Mar-2017 21:11:01.696 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+26-Mar-2017 21:11:01.701 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+26-Mar-2017 21:11:01.705 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+26-Mar-2017 21:11:01.706 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+26-Mar-2017 21:11:01.709 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+26-Mar-2017 21:11:01.712 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+26-Mar-2017 21:11:01.724 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+26-Mar-2017 21:11:01.726 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+26-Mar-2017 21:11:01.729 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+26-Mar-2017 21:11:01.731 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+26-Mar-2017 21:11:01.733 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+26-Mar-2017 21:11:01.746 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+26-Mar-2017 21:11:01.747 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+26-Mar-2017 21:11:01.748 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+26-Mar-2017 21:11:01.756 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Broadcaster Polling Wait Time 100
+26-Mar-2017 21:11:01.757 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Shared ExecutorService supported: true
+26-Mar-2017 21:11:01.759 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Messaging Thread Pool Size: Unlimited
+26-Mar-2017 21:11:01.760 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Async I/O Thread Pool Size: 200
+26-Mar-2017 21:11:01.762 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+26-Mar-2017 21:11:01.763 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+26-Mar-2017 21:11:01.781 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Invoke AtmosphereInterceptor on WebSocket message true
+26-Mar-2017 21:11:01.788 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info HttpSession supported: true
+26-Mar-2017 21:11:01.790 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+26-Mar-2017 21:11:01.791 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+26-Mar-2017 21:11:01.793 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere Framework 2.2.7.vaadin1 started.
+26-Mar-2017 21:11:01.809 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.interceptor Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+26-Mar-2017 21:11:15.907 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 14,817 ms
+26-Mar-2017 21:11:15.920 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:11:15.949 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:11:15.954 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 47050 ms
+26-Mar-2017 21:11:16.320 WARNING [http-nio-8080-exec-3] com.vaadin.server.DefaultDeploymentConfiguration.checkProductionMode 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+26-Mar-2017 21:13:00.984 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 21:13:00.986 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:13:01.041 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:13:01.093 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 21:13:01.193 SEVERE [localhost-startStop-2] org.atmosphere.container.JSR356Endpoint.onError 
+ java.io.IOException: Key must be cancelled
+	at org.apache.coyote.http11.upgrade.NioServletOutputStream.doWriteInternal(NioServletOutputStream.java:84)
+	at org.apache.coyote.http11.upgrade.NioServletOutputStream.doWrite(NioServletOutputStream.java:61)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.writeInternal(AbstractServletOutputStream.java:165)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.write(AbstractServletOutputStream.java:132)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.onWritePossible(WsRemoteEndpointImplServer.java:98)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:79)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:453)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessage(WsRemoteEndpointImplBase.java:341)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:273)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:588)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:490)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:455)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:926)
+	at org.apache.tomcat.websocket.server.WsServerContainer.destroy(WsServerContainer.java:286)
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:48)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4858)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5495)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:224)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+26-Mar-2017 21:13:01.360 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:13:01.464 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:13:01.561 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:13:01.566 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:13:14.922 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.35
+26-Mar-2017 21:13:14.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2016 21:57:08 UTC
+26-Mar-2017 21:13:14.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.35.0
+26-Mar-2017 21:13:14.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Mar-2017 21:13:14.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-65-generic
+26-Mar-2017 21:13:14.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2017 21:13:14.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+26-Mar-2017 21:13:14.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+26-Mar-2017 21:13:14.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2017 21:13:14.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:13:14.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:13:14.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+26-Mar-2017 21:13:14.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2017 21:13:14.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+26-Mar-2017 21:13:14.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+26-Mar-2017 21:13:14.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+26-Mar-2017 21:13:14.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+26-Mar-2017 21:13:14.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+26-Mar-2017 21:13:14.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+26-Mar-2017 21:13:14.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:13:14.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:13:14.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+26-Mar-2017 21:13:14.970 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+26-Mar-2017 21:13:15.322 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:13:15.355 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:13:15.363 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:13:15.367 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:13:15.369 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1208 ms
+26-Mar-2017 21:13:15.436 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+26-Mar-2017 21:13:15.437 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.35
+26-Mar-2017 21:13:15.464 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+26-Mar-2017 21:13:43.057 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 27,590 ms
+26-Mar-2017 21:13:43.067 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+26-Mar-2017 21:13:43.352 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+26-Mar-2017 21:13:43.354 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+26-Mar-2017 21:13:43.368 INFO [localhost-startStop-1] org.atmosphere.util.IOUtils.readServiceFile META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+26-Mar-2017 21:13:43.426 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.autoConfigureService Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+26-Mar-2017 21:13:43.494 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.initWebSocket Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+26-Mar-2017 21:13:43.524 INFO [localhost-startStop-1] org.atmosphere.container.JSR356AsyncSupport.<init> JSR 356 Mapping path /{path}
+26-Mar-2017 21:13:43.602 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Installing Default AtmosphereInterceptors
+26-Mar-2017 21:13:43.606 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+26-Mar-2017 21:13:43.608 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+26-Mar-2017 21:13:43.612 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+26-Mar-2017 21:13:43.615 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+26-Mar-2017 21:13:43.616 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+26-Mar-2017 21:13:43.619 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+26-Mar-2017 21:13:43.621 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+26-Mar-2017 21:13:43.627 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+26-Mar-2017 21:13:43.629 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+26-Mar-2017 21:13:43.631 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+26-Mar-2017 21:13:43.633 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+26-Mar-2017 21:13:43.635 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+26-Mar-2017 21:13:43.647 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+26-Mar-2017 21:13:43.648 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+26-Mar-2017 21:13:43.651 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+26-Mar-2017 21:13:43.653 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Broadcaster Polling Wait Time 100
+26-Mar-2017 21:13:43.654 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Shared ExecutorService supported: true
+26-Mar-2017 21:13:43.657 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Messaging Thread Pool Size: Unlimited
+26-Mar-2017 21:13:43.659 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Async I/O Thread Pool Size: 200
+26-Mar-2017 21:13:43.659 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+26-Mar-2017 21:13:43.660 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+26-Mar-2017 21:13:43.676 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Invoke AtmosphereInterceptor on WebSocket message true
+26-Mar-2017 21:13:43.677 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info HttpSession supported: true
+26-Mar-2017 21:13:43.678 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+26-Mar-2017 21:13:43.679 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+26-Mar-2017 21:13:43.680 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere Framework 2.2.7.vaadin1 started.
+26-Mar-2017 21:13:43.690 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.interceptor Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+26-Mar-2017 21:13:55.850 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 12,783 ms
+26-Mar-2017 21:13:55.893 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:13:55.920 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:13:55.924 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 40553 ms
+26-Mar-2017 21:13:56.284 WARNING [http-nio-8080-exec-10] com.vaadin.server.DefaultDeploymentConfiguration.checkProductionMode 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+26-Mar-2017 21:16:59.053 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 21:16:59.054 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:16:59.109 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:16:59.111 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 21:16:59.342 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:16:59.451 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:16:59.454 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:16:59.458 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:17:12.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.35
+26-Mar-2017 21:17:12.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2016 21:57:08 UTC
+26-Mar-2017 21:17:12.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.35.0
+26-Mar-2017 21:17:12.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Mar-2017 21:17:12.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-65-generic
+26-Mar-2017 21:17:12.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2017 21:17:12.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+26-Mar-2017 21:17:12.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+26-Mar-2017 21:17:12.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2017 21:17:12.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:17:12.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:17:12.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+26-Mar-2017 21:17:12.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2017 21:17:12.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+26-Mar-2017 21:17:12.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+26-Mar-2017 21:17:12.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+26-Mar-2017 21:17:12.066 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+26-Mar-2017 21:17:12.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+26-Mar-2017 21:17:12.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+26-Mar-2017 21:17:12.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:17:12.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:17:12.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+26-Mar-2017 21:17:12.076 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+26-Mar-2017 21:17:12.484 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:17:12.515 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:17:12.522 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:17:12.526 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:17:12.529 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1258 ms
+26-Mar-2017 21:17:12.594 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+26-Mar-2017 21:17:12.596 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.35
+26-Mar-2017 21:17:12.617 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+26-Mar-2017 21:17:38.971 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 26,348 ms
+26-Mar-2017 21:17:38.973 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+26-Mar-2017 21:17:39.241 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+26-Mar-2017 21:17:39.243 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+26-Mar-2017 21:17:39.260 INFO [localhost-startStop-1] org.atmosphere.util.IOUtils.readServiceFile META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+26-Mar-2017 21:17:39.328 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.autoConfigureService Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+26-Mar-2017 21:17:39.400 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.initWebSocket Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+26-Mar-2017 21:17:39.439 INFO [localhost-startStop-1] org.atmosphere.container.JSR356AsyncSupport.<init> JSR 356 Mapping path /{path}
+26-Mar-2017 21:17:39.506 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Installing Default AtmosphereInterceptors
+26-Mar-2017 21:17:39.510 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+26-Mar-2017 21:17:39.512 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+26-Mar-2017 21:17:39.516 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+26-Mar-2017 21:17:39.519 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+26-Mar-2017 21:17:39.520 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+26-Mar-2017 21:17:39.526 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+26-Mar-2017 21:17:39.530 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+26-Mar-2017 21:17:39.537 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+26-Mar-2017 21:17:39.540 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+26-Mar-2017 21:17:39.543 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+26-Mar-2017 21:17:39.545 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+26-Mar-2017 21:17:39.546 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+26-Mar-2017 21:17:39.557 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+26-Mar-2017 21:17:39.559 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+26-Mar-2017 21:17:39.560 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+26-Mar-2017 21:17:39.561 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Broadcaster Polling Wait Time 100
+26-Mar-2017 21:17:39.565 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Shared ExecutorService supported: true
+26-Mar-2017 21:17:39.567 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Messaging Thread Pool Size: Unlimited
+26-Mar-2017 21:17:39.569 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Async I/O Thread Pool Size: 200
+26-Mar-2017 21:17:39.570 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+26-Mar-2017 21:17:39.572 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+26-Mar-2017 21:17:39.593 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Invoke AtmosphereInterceptor on WebSocket message true
+26-Mar-2017 21:17:39.595 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info HttpSession supported: true
+26-Mar-2017 21:17:39.596 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+26-Mar-2017 21:17:39.598 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+26-Mar-2017 21:17:39.599 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere Framework 2.2.7.vaadin1 started.
+26-Mar-2017 21:17:39.611 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.interceptor Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+26-Mar-2017 21:17:52.156 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 13,183 ms
+26-Mar-2017 21:17:52.182 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:17:52.227 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:17:52.230 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 39699 ms
+26-Mar-2017 21:17:52.611 WARNING [http-nio-8080-exec-26] com.vaadin.server.DefaultDeploymentConfiguration.checkProductionMode 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+26-Mar-2017 21:19:47.201 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 21:19:47.204 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:19:47.258 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:19:47.310 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 21:19:47.574 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:19:47.603 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:19:47.662 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:19:47.665 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:19:59.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.35
+26-Mar-2017 21:19:59.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2016 21:57:08 UTC
+26-Mar-2017 21:19:59.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.35.0
+26-Mar-2017 21:19:59.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Mar-2017 21:19:59.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-65-generic
+26-Mar-2017 21:19:59.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2017 21:19:59.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+26-Mar-2017 21:19:59.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+26-Mar-2017 21:19:59.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2017 21:19:59.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:19:59.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:19:59.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+26-Mar-2017 21:19:59.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2017 21:19:59.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+26-Mar-2017 21:19:59.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+26-Mar-2017 21:19:59.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+26-Mar-2017 21:19:59.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+26-Mar-2017 21:19:59.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+26-Mar-2017 21:19:59.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+26-Mar-2017 21:19:59.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:19:59.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:19:59.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+26-Mar-2017 21:19:59.787 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+26-Mar-2017 21:20:00.155 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:20:00.181 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:20:00.187 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:20:00.191 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:20:00.193 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1228 ms
+26-Mar-2017 21:20:00.258 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+26-Mar-2017 21:20:00.260 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.35
+26-Mar-2017 21:20:00.283 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+26-Mar-2017 21:20:27.230 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 26,943 ms
+26-Mar-2017 21:20:27.232 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+26-Mar-2017 21:20:27.499 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+26-Mar-2017 21:20:27.501 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+26-Mar-2017 21:20:27.518 INFO [localhost-startStop-1] org.atmosphere.util.IOUtils.readServiceFile META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+26-Mar-2017 21:20:27.592 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.autoConfigureService Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+26-Mar-2017 21:20:27.640 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.initWebSocket Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+26-Mar-2017 21:20:27.683 INFO [localhost-startStop-1] org.atmosphere.container.JSR356AsyncSupport.<init> JSR 356 Mapping path /{path}
+26-Mar-2017 21:20:27.766 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Installing Default AtmosphereInterceptors
+26-Mar-2017 21:20:27.769 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+26-Mar-2017 21:20:27.771 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+26-Mar-2017 21:20:27.775 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+26-Mar-2017 21:20:27.777 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+26-Mar-2017 21:20:27.778 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+26-Mar-2017 21:20:27.781 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+26-Mar-2017 21:20:27.783 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+26-Mar-2017 21:20:27.790 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+26-Mar-2017 21:20:27.792 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+26-Mar-2017 21:20:27.794 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+26-Mar-2017 21:20:27.796 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+26-Mar-2017 21:20:27.797 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+26-Mar-2017 21:20:27.809 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+26-Mar-2017 21:20:27.811 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+26-Mar-2017 21:20:27.812 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+26-Mar-2017 21:20:27.813 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Broadcaster Polling Wait Time 100
+26-Mar-2017 21:20:27.814 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Shared ExecutorService supported: true
+26-Mar-2017 21:20:27.815 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Messaging Thread Pool Size: Unlimited
+26-Mar-2017 21:20:27.817 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Async I/O Thread Pool Size: 200
+26-Mar-2017 21:20:27.818 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+26-Mar-2017 21:20:27.819 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+26-Mar-2017 21:20:27.833 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Invoke AtmosphereInterceptor on WebSocket message true
+26-Mar-2017 21:20:27.834 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info HttpSession supported: true
+26-Mar-2017 21:20:27.835 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+26-Mar-2017 21:20:27.837 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+26-Mar-2017 21:20:27.838 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere Framework 2.2.7.vaadin1 started.
+26-Mar-2017 21:20:27.850 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.interceptor Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+26-Mar-2017 21:20:40.213 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 12,981 ms
+26-Mar-2017 21:20:40.258 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:20:40.285 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:20:40.291 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 40096 ms
+26-Mar-2017 21:20:40.686 WARNING [http-nio-8080-exec-25] com.vaadin.server.DefaultDeploymentConfiguration.checkProductionMode 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+26-Mar-2017 21:41:21.066 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 21:41:21.103 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:41:21.155 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:41:21.156 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 21:41:21.631 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:41:21.724 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:41:21.812 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:41:21.816 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:41:42.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.35
+26-Mar-2017 21:41:42.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 11 2016 21:57:08 UTC
+26-Mar-2017 21:41:42.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.35.0
+26-Mar-2017 21:41:42.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+26-Mar-2017 21:41:42.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-65-generic
+26-Mar-2017 21:41:42.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Mar-2017 21:41:42.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+26-Mar-2017 21:41:42.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+26-Mar-2017 21:41:42.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Mar-2017 21:41:42.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:41:42.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:41:42.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/elangovan/Asset_Management/build/tomcat/conf/logging.properties
+26-Mar-2017 21:41:42.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Mar-2017 21:41:42.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+26-Mar-2017 21:41:42.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+26-Mar-2017 21:41:42.584 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlogback.configurationFile=../conf/logback.xml
+26-Mar-2017 21:41:42.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+26-Mar-2017 21:41:42.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n
+26-Mar-2017 21:41:42.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/elangovan/Asset_Management/build/tomcat/endorsed
+26-Mar-2017 21:41:42.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:41:42.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/elangovan/Asset_Management/build/tomcat
+26-Mar-2017 21:41:42.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/elangovan/Asset_Management/build/tomcat/temp
+26-Mar-2017 21:41:42.593 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+26-Mar-2017 21:41:43.869 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:41:43.924 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:41:43.930 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:41:43.934 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Mar-2017 21:41:43.935 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2869 ms
+26-Mar-2017 21:41:44.046 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+26-Mar-2017 21:41:44.048 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.35
+26-Mar-2017 21:41:44.099 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core
+26-Mar-2017 21:42:17.394 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app-core has finished in 33,293 ms
+26-Mar-2017 21:42:17.397 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app
+26-Mar-2017 21:42:17.799 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler mapped to context-path: /*
+26-Mar-2017 21:42:17.800 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.addAtmosphereHandler Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.server.communication.PushAtmosphereHandler
+26-Mar-2017 21:42:17.818 INFO [localhost-startStop-1] org.atmosphere.util.IOUtils.readServiceFile META-INF/services/org.atmosphere.cpr.AtmosphereFramework not found in class loader
+26-Mar-2017 21:42:17.889 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.autoConfigureService Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+26-Mar-2017 21:42:17.943 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.initWebSocket Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+26-Mar-2017 21:42:17.980 INFO [localhost-startStop-1] org.atmosphere.container.JSR356AsyncSupport.<init> JSR 356 Mapping path /{path}
+26-Mar-2017 21:42:18.061 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Installing Default AtmosphereInterceptors
+26-Mar-2017 21:42:18.064 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+26-Mar-2017 21:42:18.067 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+26-Mar-2017 21:42:18.070 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+26-Mar-2017 21:42:18.073 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+26-Mar-2017 21:42:18.074 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Dropping Interceptor org.atmosphere.interceptor.HeartbeatInterceptor
+26-Mar-2017 21:42:18.077 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+26-Mar-2017 21:42:18.079 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+26-Mar-2017 21:42:18.086 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+26-Mar-2017 21:42:18.088 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+26-Mar-2017 21:42:18.091 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+26-Mar-2017 21:42:18.094 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.newAInterceptor 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+26-Mar-2017 21:42:18.095 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.configureAtmosphereInterceptor Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+26-Mar-2017 21:42:18.106 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+26-Mar-2017 21:42:18.107 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+26-Mar-2017 21:42:18.108 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+26-Mar-2017 21:42:18.110 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Broadcaster Polling Wait Time 100
+26-Mar-2017 21:42:18.111 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Shared ExecutorService supported: true
+26-Mar-2017 21:42:18.112 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Messaging Thread Pool Size: Unlimited
+26-Mar-2017 21:42:18.113 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Async I/O Thread Pool Size: 200
+26-Mar-2017 21:42:18.115 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+26-Mar-2017 21:42:18.116 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+26-Mar-2017 21:42:18.130 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Invoke AtmosphereInterceptor on WebSocket message true
+26-Mar-2017 21:42:18.131 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info HttpSession supported: true
+26-Mar-2017 21:42:18.132 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using DefaultAtmosphereObjectFactory for dependency injection and object creation
+26-Mar-2017 21:42:18.134 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/8.0.35 using javax.servlet/3.0 and jsr356/WebSocket API
+26-Mar-2017 21:42:18.135 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.info Atmosphere Framework 2.2.7.vaadin1 started.
+26-Mar-2017 21:42:18.146 INFO [localhost-startStop-1] org.atmosphere.cpr.AtmosphereFramework.interceptor Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+26-Mar-2017 21:42:32.288 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/elangovan/Asset_Management/build/tomcat/webapps/app has finished in 14,891 ms
+26-Mar-2017 21:42:32.299 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:42:32.320 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:42:32.322 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 48385 ms
+26-Mar-2017 21:42:32.780 WARNING [http-nio-8080-exec-50] com.vaadin.server.DefaultDeploymentConfiguration.checkProductionMode 
+=================================================================
+Vaadin is running in DEBUG MODE.
+Add productionMode=true to web.xml to disable debug features.
+To show debug window, add ?debug to your application URL.
+=================================================================
+26-Mar-2017 21:43:08.909 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Mar-2017 21:43:08.911 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:43:08.965 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:43:09.016 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+26-Mar-2017 21:43:09.298 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:43:09.340 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Mar-2017 21:43:09.343 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Mar-2017 21:43:09.347 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

@@ -4,14 +4,42 @@
         extends="/com/haulmont/cuba/web/app/mainwindow/mainwindow.xml"
         messagesPack="com.company.assetmanagement.web.mainwindow"
         xmlns:main="http://schemas.haulmont.com/cuba/mainwindow.xsd">
-    <layout>
-        <split id="foldersSplit">
-            <main:workArea id="workArea">
-                <main:initialLayout margin="false">
+    <layout expand="middlePanel">
+        <hbox id="titleBar"
+              margin="true"
+              stylename="gray"/>
+        <split id="foldersSplit"
+               enable="false"
+               height="0px"
+               pos="0"
+               visible="false"
+               width="0px">
+            <main:workArea id="workArea"
+                           enable="false"
+                           height="0px"
+                           visible="false"
+                           width="0px">
+                <main:initialLayout enable="false"
+                                    margin="false"
+                                    spacing="false"
+                                    visible="false"/>
+            </main:workArea>
+        </split>
+        <split id="middlePanel"
+               orientation="horizontal"
+               pos="80"
+               width="100%">
+            <main:workArea id="workarea_1"
+                           height="100%"
+                           width="100%">
+                <main:initialLayout>
                     <vbox height="1024px"
                           stylename="image"/>
                 </main:initialLayout>
             </main:workArea>
+            <main:foldersPane height="100%"
+                              stylename="blue"
+                              width="100%"/>
         </split>
     </layout>
 </window>

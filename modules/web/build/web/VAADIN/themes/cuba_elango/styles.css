@@ -70,9 +70,9 @@
 }
 @keyframes valo-animate-out-slide-down-fade{100%{opacity:0;-webkit-transform:translatey(30%);-moz-transform:translatey(30%);-ms-transform:translatey(30%);-o-transform:translatey(30%);transform:translatey(30%)}
 }
-@font-face{font-family:ThemeIcons;font-weight:normal;font-style:normal;src:url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot?v=2017_03_26_20_11);src:url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot?v=2017_03_26_20_11?#iefix?v=2017_03_26_20_11) format("embedded-opentype"),url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.woff?v=2017_03_26_20_11) format("woff"),url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.ttf?v=2017_03_26_20_11) format("truetype"),url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.svg#ThemeIcons?v=2017_03_26_20_11) format("svg")}
+@font-face{font-family:ThemeIcons;font-weight:normal;font-style:normal;src:url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot?v=2017_03_26_21_41);src:url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot?v=2017_03_26_21_41?#iefix?v=2017_03_26_21_41) format("embedded-opentype"),url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.woff?v=2017_03_26_21_41) format("woff"),url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.ttf?v=2017_03_26_21_41) format("truetype"),url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.svg#ThemeIcons?v=2017_03_26_21_41) format("svg")}
 .ThemeIcons{font-family:ThemeIcons;font-style:normal;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;text-align:center}
-@font-face{font-family:FontAwesome;font-weight:normal;font-style:normal;src:url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot?v=2017_03_26_20_11);src:url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot?v=2017_03_26_20_11?#iefix) format("embedded-opentype"),url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.woff?v=2017_03_26_20_11) format("woff"),url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.ttf?v=2017_03_26_20_11) format("truetype"),url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.svg#FontAwesome?v=2017_03_26_20_11) format("svg")}
+@font-face{font-family:FontAwesome;font-weight:normal;font-style:normal;src:url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot?v=2017_03_26_21_41);src:url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot?v=2017_03_26_21_41?#iefix) format("embedded-opentype"),url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.woff?v=2017_03_26_21_41) format("woff"),url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.ttf?v=2017_03_26_21_41) format("truetype"),url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.svg#FontAwesome?v=2017_03_26_21_41) format("svg")}
 .FontAwesome{font-family:FontAwesome;font-style:normal;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;text-align:center}
 @-webkit-keyframes v-rotate-360{to{-webkit-transform:rotate(360deg)}
 }
@@ -237,13 +237,13 @@ div.v-layout.v-horizontal.v-widget{white-space:nowrap}
 .v-colorpicker-popup.v-window{min-width:220px!important}
 .v-colorpicker-gradient-container{overflow:visible!important}
 .v-colorpicker-gradient-clicklayer{opacity:0;filter:alpha(opacity=0)}
-.rgb-gradient .v-colorpicker-gradient-background{background:url(../valo/components/img/colorpicker/gradient2.png?v=2017_03_26_20_11)}
-.hsv-gradient .v-colorpicker-gradient-foreground{background:url(../valo/components/img/colorpicker/gradient.png?v=2017_03_26_20_11)}
+.rgb-gradient .v-colorpicker-gradient-background{background:url(../valo/components/img/colorpicker/gradient2.png?v=2017_03_26_21_41)}
+.hsv-gradient .v-colorpicker-gradient-foreground{background:url(../valo/components/img/colorpicker/gradient.png?v=2017_03_26_21_41)}
 .v-colorpicker-gradient-higherbox:before{content:"";width:11px;height:11px;border-radius:7px;border:1px solid #fff;-webkit-box-shadow:0 0 0 1px rgba(0,0,0,0.3),inset 0 0 0 1px rgba(0,0,0,0.3);box-shadow:0 0 0 1px rgba(0,0,0,0.3),inset 0 0 0 1px rgba(0,0,0,0.3);position:absolute;bottom:-6px;left:-6px}
 .v-colorpicker-popup .v-slider.v-slider-red:before{background-color:red}
 .v-colorpicker-popup .v-slider.v-slider-green:before{background-color:green}
 .v-colorpicker-popup .v-slider.v-slider-blue:before{background-color:blue}
-.v-colorpicker-popup .v-slider.hue-slider:before{background:url(../valo/components/img/colorpicker/slider_hue_bg.png?v=2017_03_26_20_11)}
+.v-colorpicker-popup .v-slider.hue-slider:before{background:url(../valo/components/img/colorpicker/slider_hue_bg.png?v=2017_03_26_21_41)}
 .v-colorpicker-popup input.v-textfield-dark{color:#fff}
 .v-colorpicker-popup input.v-textfield-light{color:#000}
 .v-colorpicker-grid{height:319px}
@@ -286,17 +286,18 @@ to{left:100%}
 @keyframes move-indicator{from{left:-120px}
 to{left:100%}
 }
-.image{background-image:url(images/main1.png?v=2017_03_26_20_11)}
+.image{background-image:url(images/main1.png?v=2017_03_26_21_41)}
+.folderspane .v-tree-node.emphasized{font-weight:bold}
 .cuba_elango.v-app,.cuba_elango.v-app-loading{font:400 14px/1.35 Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;color:#37404e;background-color:#e7ebf2;cursor:default}
 .cuba_elango .v-app-loading{width:100%;height:100%;background:#e7ebf2}
-.cuba_elango .v-app-loading:before{content:"";position:fixed;z-index:100;top:45%;left:50%;width:28px;height:28px;padding:6px;margin-top:-21px;margin-left:-21px;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_20_11) no-repeat 50%;border-radius:0}
+.cuba_elango .v-app-loading:before{content:"";position:fixed;z-index:100;top:45%;left:50%;width:28px;height:28px;padding:6px;margin-top:-21px;margin-left:-21px;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_21_41) no-repeat 50%;border-radius:0}
 .cuba_elango .v-loading-indicator{position:fixed!important;z-index:99999;left:0;right:auto;top:0;width:50%;opacity:1;height:3px;background-color:#3b5998;pointer-events:none;-webkit-transition:none;-moz-transition:none;transition:none;-webkit-animation:v-progress-start 1000ms 200ms both;-moz-animation:v-progress-start 1000ms 200ms both;animation:v-progress-start 1000ms 200ms both}
 .cuba_elango .v-loading-indicator[style*="none"]{display:block!important;width:100%!important;opacity:0;-webkit-animation:none;-moz-animation:none;animation:none;-webkit-transition:opacity 500ms 300ms,width 300ms;-moz-transition:opacity 500ms 300ms,width 300ms;transition:opacity 500ms 300ms,width 300ms}
 .cuba_elango .v-loading-indicator-delay{width:90%;-webkit-animation:v-progress-delay 3.8s forwards;-moz-animation:v-progress-delay 3.8s forwards;animation:v-progress-delay 3.8s forwards}
 .v-ff .cuba_elango .v-loading-indicator-delay{width:50%}
 .cuba_elango .v-loading-indicator-wait{width:96%;-webkit-animation:v-progress-wait 5s forwards,v-progress-wait-pulse 1s 4s infinite backwards;-moz-animation:v-progress-wait 5s forwards,v-progress-wait-pulse 1s 4s infinite backwards;animation:v-progress-wait 5s forwards,v-progress-wait-pulse 1s 4s infinite backwards}
 .v-ff .cuba_elango .v-loading-indicator-wait{width:90%}
-.v-ie8 .cuba_elango .v-loading-indicator,.v-ie8 .cuba_elango .v-loading-indicator-delay,.v-ie8 .cuba_elango .v-loading-indicator-wait,.v-ie9 .cuba_elango .v-loading-indicator,.v-ie9 .cuba_elango .v-loading-indicator-delay,.v-ie9 .cuba_elango .v-loading-indicator-wait{width:28px!important;height:28px;padding:6px;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_20_11) no-repeat 50%;border-radius:0;top:6px;right:6px;left:auto;filter:alpha(opacity=50)}
+.v-ie8 .cuba_elango .v-loading-indicator,.v-ie8 .cuba_elango .v-loading-indicator-delay,.v-ie8 .cuba_elango .v-loading-indicator-wait,.v-ie9 .cuba_elango .v-loading-indicator,.v-ie9 .cuba_elango .v-loading-indicator-delay,.v-ie9 .cuba_elango .v-loading-indicator-wait{width:28px!important;height:28px;padding:6px;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_21_41) no-repeat 50%;border-radius:0;top:6px;right:6px;left:auto;filter:alpha(opacity=50)}
 .v-ie8 .cuba_elango .v-loading-indicator[style*="none"],.v-ie8 .cuba_elango .v-loading-indicator-delay[style*="none"],.v-ie8 .cuba_elango .v-loading-indicator-wait[style*="none"],.v-ie9 .cuba_elango .v-loading-indicator[style*="none"],.v-ie9 .cuba_elango .v-loading-indicator-delay[style*="none"],.v-ie9 .cuba_elango .v-loading-indicator-wait[style*="none"]{display:none!important}
 .v-ie8 .cuba_elango .v-loading-indicator-wait,.v-ie9 .cuba_elango .v-loading-indicator-wait{filter:alpha(opacity=100)}
 .cuba_elango .v-scrollable:focus{outline:0}
@@ -334,7 +335,7 @@ to{left:100%}
 .cuba_elango .v-reconnect-dialog{color:white;top:8px;right:8px;max-width:100%;border-radius:0;-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,0.25);box-shadow:0 0 20px 0 rgba(0,0,0,0.25);padding:8px 10px;background-color:#444;background-color:rgba(68,68,68,0.9);line-height:20px;text-align:center}
 .cuba_elango .v-reconnect-dialog .text{display:inline-block;padding-left:10px}
 .cuba_elango .v-reconnect-dialog .spinner{height:24px!important;width:24px!important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:2px solid rgba(59,89,152,0.2);border-top-color:#3b5998;border-right-color:#3b5998;border-radius:100%;-webkit-animation:v-rotate-360 500ms infinite linear;-moz-animation:v-rotate-360 500ms infinite linear;animation:v-rotate-360 500ms infinite linear;pointer-events:none;display:none;vertical-align:middle}
-.v-ie8 .cuba_elango .v-reconnect-dialog .spinner,.v-ie9 .cuba_elango .v-reconnect-dialog .spinner{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_20_11) no-repeat 50% 50%;background-size:80%}
+.v-ie8 .cuba_elango .v-reconnect-dialog .spinner,.v-ie9 .cuba_elango .v-reconnect-dialog .spinner{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_21_41) no-repeat 50% 50%;background-size:80%}
 .v-ie8 .cuba_elango .v-reconnect-dialog .spinner{min-width:30px;min-height:30px}
 .cuba_elango .v-reconnect-dialog.active .spinner{display:inline-block}
 .cuba_elango .v-absolutelayout-wrapper{position:absolute}
@@ -734,7 +735,7 @@ to{left:100%}
 .cuba_elango .v-grid-horizontal-scrollbar-deco{background-color:#fafafa;border:1px solid #d4d4d4;border-top:0}
 .cuba_elango .v-grid-cell-focused{position:relative}
 .cuba_elango .v-grid-cell-focused:before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;border:2px solid #3b5998;display:none;pointer-events:none}
-.ie8 .cuba_elango .v-grid-cell-focused:before,.ie9 .cuba_elango .v-grid-cell-focused:before,.ie10 .cuba_elango .v-grid-cell-focused:before{content:url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==?v=2017_03_26_20_11)}
+.ie8 .cuba_elango .v-grid-cell-focused:before,.ie9 .cuba_elango .v-grid-cell-focused:before,.ie10 .cuba_elango .v-grid-cell-focused:before{content:url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==?v=2017_03_26_21_41)}
 .cuba_elango .v-grid:focus .v-grid-cell-focused:before{display:block}
 .cuba_elango .v-grid.v-disabled:focus .v-grid-cell-focused:before{display:none}
 .cuba_elango .v-grid-editor{position:absolute;z-index:20;overflow:hidden;left:0;right:0;border:1px solid #d4d4d4;box-sizing:border-box;-moz-box-sizing:border-box;margin-top:-1px;-webkit-box-shadow:0 0 9px rgba(0,0,0,0.2);box-shadow:0 0 9px rgba(0,0,0,0.2)}
@@ -767,7 +768,7 @@ to{left:100%}
 .cuba_elango .v-grid-spacer.stripe>td{background-color:#f5f5f5;border-top:1px solid #e5e5e5;border-bottom:1px solid #d4d4d4}
 .cuba_elango .v-grid-spacer-deco-container{border-top:1px solid transparent;position:relative;top:0;z-index:5}
 .cuba_elango .v-grid-spacer-deco{top:0;left:0;width:2px;background-color:#3b5998;position:absolute;height:100%;pointer-events:none}
-.ie8 .cuba_elango .v-grid-spacer-deco:before,.ie9 .cuba_elango .v-grid-spacer-deco:before,.ie10 .cuba_elango .v-grid-spacer-deco:before{content:url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==?v=2017_03_26_20_11)}
+.ie8 .cuba_elango .v-grid-spacer-deco:before,.ie9 .cuba_elango .v-grid-spacer-deco:before,.ie10 .cuba_elango .v-grid-spacer-deco:before{content:url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==?v=2017_03_26_21_41)}
 .cuba_elango .v-grid-cell>.v-progressbar{width:100%}
 .cuba_elango .v-grid{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;background-color:#fafafa}
 .cuba_elango .v-grid.v-disabled{opacity:.5;filter:alpha(opacity=50)}
@@ -1561,7 +1562,7 @@ to{left:100%}
 .cuba_elango .v-tabsheet-scroller [class*="disabled"]{cursor:default;color:inherit!important;opacity:.1!important;filter:alpha(opacity=10)!important}
 .cuba_elango .v-tabsheet-tabsheetpanel>.v-scrollable>.v-widget{-webkit-animation:valo-animate-in-fade 300ms backwards;-moz-animation:valo-animate-in-fade 300ms backwards;animation:valo-animate-in-fade 300ms backwards}
 .cuba_elango .v-tabsheet-deco{height:14px!important;width:14px!important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:2px solid rgba(59,89,152,0.2);border-top-color:#3b5998;border-right-color:#3b5998;border-radius:100%;-webkit-animation:v-rotate-360 500ms infinite linear;-moz-animation:v-rotate-360 500ms infinite linear;animation:v-rotate-360 500ms infinite linear;pointer-events:none;display:none;position:absolute;z-index:1;bottom:50%;margin-bottom:-20px;left:50%;margin-left:-7px}
-.v-ie8 .cuba_elango .v-tabsheet-deco,.v-ie9 .cuba_elango .v-tabsheet-deco{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_20_11) no-repeat 50% 50%;background-size:80%}
+.v-ie8 .cuba_elango .v-tabsheet-deco,.v-ie9 .cuba_elango .v-tabsheet-deco{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_21_41) no-repeat 50% 50%;background-size:80%}
 .v-ie8 .cuba_elango .v-tabsheet-deco{min-width:30px;min-height:30px}
 .cuba_elango .v-tabsheet-loading .v-tabsheet-deco{display:block}
 .cuba_elango .v-tabsheet-equal-width-tabs>.v-tabsheet-tabcontainer table,.cuba_elango .v-tabsheet-equal-width-tabs>.v-tabsheet-tabcontainer tbody,.cuba_elango .v-tabsheet-equal-width-tabs>.v-tabsheet-tabcontainer tr{width:100%}
@@ -1762,7 +1763,7 @@ to{left:100%}
 .cuba_elango .v-label-align-right{text-align:right}
 .cuba_elango .v-label-align-center{text-align:center}
 .cuba_elango .v-label-spinner{height:24px!important;width:24px!important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:2px solid rgba(59,89,152,0.2);border-top-color:#3b5998;border-right-color:#3b5998;border-radius:100%;-webkit-animation:v-rotate-360 500ms infinite linear;-moz-animation:v-rotate-360 500ms infinite linear;animation:v-rotate-360 500ms infinite linear;pointer-events:none}
-.v-ie8 .cuba_elango .v-label-spinner,.v-ie9 .cuba_elango .v-label-spinner{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_20_11) no-repeat 50% 50%;background-size:80%}
+.v-ie8 .cuba_elango .v-label-spinner,.v-ie9 .cuba_elango .v-label-spinner{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_21_41) no-repeat 50% 50%;background-size:80%}
 .v-ie8 .cuba_elango .v-label-spinner{min-width:30px;min-height:30px}
 .cuba_elango .v-label-success,.cuba_elango .v-label-failure{background:white;color:#3a4455;border:2px solid #2c9720;border-radius:0;padding:5px 13px 5px 25px;font-weight:500;font-size:13px}
 .cuba_elango .v-label-success:before,.cuba_elango .v-label-failure:before{font-family:ThemeIcons;content:"\f00c";margin-right:.5em;margin-left:-13px;color:#2c9720}
@@ -1802,7 +1803,7 @@ to{left:100%}
 .cuba_elango .v-popupview-popup .popupContent>.v-margin-bottom{padding-bottom:8px}
 .cuba_elango .v-popupview-popup .popupContent>.v-margin-left{padding-left:8px}
 .cuba_elango .v-popupview-loading{margin:8px 8px;height:24px!important;width:24px!important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:2px solid rgba(59,89,152,0.2);border-top-color:#3b5998;border-right-color:#3b5998;border-radius:100%;-webkit-animation:v-rotate-360 500ms infinite linear;-moz-animation:v-rotate-360 500ms infinite linear;animation:v-rotate-360 500ms infinite linear;pointer-events:none}
-.v-ie8 .cuba_elango .v-popupview-loading,.v-ie9 .cuba_elango .v-popupview-loading{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_20_11) no-repeat 50% 50%;background-size:80%}
+.v-ie8 .cuba_elango .v-popupview-loading,.v-ie9 .cuba_elango .v-popupview-loading{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_21_41) no-repeat 50% 50%;background-size:80%}
 .v-ie8 .cuba_elango .v-popupview-loading{min-width:30px;min-height:30px}
 .cuba_elango .v-richtextarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;margin:0;font:inherit;font-weight:400;line-height:normal;height:25px;border-radius:0;padding:0;border:1px solid #b6b9bf;background:white;color:#3a4455;-webkit-box-shadow:inset 0 1px 0 #f5f6f9,0 1px 0 rgba(255,255,255,0.4);box-shadow:inset 0 1px 0 #f5f6f9,0 1px 0 rgba(255,255,255,0.4);-webkit-transition:box-shadow 180ms,border 180ms;-moz-transition:box-shadow 180ms,border 180ms;transition:box-shadow 180ms,border 180ms;height:auto;overflow:hidden}
 .v-ie8 .cuba_elango .v-richtextarea,.v-ie9 .cuba_elango .v-richtextarea{line-height:25px;padding-top:0;padding-bottom:0}
@@ -2835,7 +2836,7 @@ to{left:100%}
 .cuba_elango .cuba-login-main-layout{background-color:#e7ebf2}
 .cuba_elango .cuba-login-icon>img{height:32px}
 .cuba_elango .cuba-powered-by{font-size:11px;padding-bottom:25px}
-.cuba_elango .cuba-powered-by a{margin-left:5px;display:inline-block;text-decoration:none;font-weight:bold;color:#006bac;background:url(../halo/app/images/cuba-icon-login.png?v=2017_03_26_20_11);background-repeat:no-repeat;background-position:left center;background-size:contain;background-clip:border-box;padding-left:24px;padding-top:3px;padding-bottom:3px}
+.cuba_elango .cuba-powered-by a{margin-left:5px;display:inline-block;text-decoration:none;font-weight:bold;color:#006bac;background:url(../halo/app/images/cuba-icon-login.png?v=2017_03_26_21_41);background-repeat:no-repeat;background-position:left center;background-size:contain;background-clip:border-box;padding-left:24px;padding-top:3px;padding-bottom:3px}
 .cuba_elango .cuba-powered-by .cuba-cuba-word{color:#5b5857}
 .cuba_elango .cuba-logger-level{padding:5px;border:1px solid #c5c5c5;box-shadow:none}
 .cuba_elango .loglevel-ALL.currentlevel{background:#fff}
@@ -2971,7 +2972,7 @@ to{left:100%}
 .cuba_elango .v-progressbar-indeterminate .v-progressbar-wrapper:after{border-radius:0;height:inherit;background-color:#3b5998;background-image:-webkit-linear-gradient(top,#4263a4 2%,#2f4982 98%);background-image:linear-gradient(to bottom,#4263a4 2%,#2f4982 98%);border:1px solid #2e4678;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;max-width:100%;content:" ";display:block;width:120px;position:absolute;-webkit-animation:move-indicator 3s infinite linear;-moz-animation:move-indicator 3s infinite linear;animation:move-indicator 3s infinite linear}
 .cuba_elango .v-progressbar-indeterminate .v-progressbar-wrapper .v-progressbar-indicator{display:none}
 .cuba_elango .v-progressbar-indeterminate-circle{height:24px!important;width:24px!important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:2px solid rgba(59,89,152,0.2);border-top-color:#3b5998;border-right-color:#3b5998;border-radius:100%;-webkit-animation:v-rotate-360 500ms infinite linear;-moz-animation:v-rotate-360 500ms infinite linear;animation:v-rotate-360 500ms infinite linear;pointer-events:none}
-.v-ie8 .cuba_elango .v-progressbar-indeterminate-circle,.v-ie9 .cuba_elango .v-progressbar-indeterminate-circle{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_20_11) no-repeat 50% 50%;background-size:80%}
+.v-ie8 .cuba_elango .v-progressbar-indeterminate-circle,.v-ie9 .cuba_elango .v-progressbar-indeterminate-circle{border:0;border-radius:0;background:#fff url(../valo/shared/img/spinner.gif?v=2017_03_26_21_41) no-repeat 50% 50%;background-size:80%}
 .v-ie8 .cuba_elango .v-progressbar-indeterminate-circle{min-width:30px;min-height:30px}
 .cuba_elango .v-progressbar-indeterminate-circle .v-progressbar-wrapper{display:none}
 .cuba_elango .addedItem{color:green!important}

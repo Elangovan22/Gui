@@ -545,3 +545,1466 @@
 2017-03-26 20:12:52.060 DEBUG [http-nio-8080-exec-44/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
 2017-03-26 20:12:52.144 DEBUG [http-nio-8080-exec-44/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
 2017-03-26 20:12:52.407 DEBUG [http-nio-8080-exec-44/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 20:16:50.565 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:17:50.475 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:18:50.477 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:19:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:20:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:21:50.481 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:22:50.477 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:23:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:24:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:25:50.475 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:26:50.475 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:27:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:28:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:29:50.475 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:30:50.475 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:31:50.475 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:32:50.475 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:33:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:34:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:35:50.481 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:36:50.476 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:37:50.477 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:38:50.478 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:39:50.478 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:40:50.478 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:41:50.477 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:42:50.589 ERROR [ServerInfoTimer] com.haulmont.cuba.core.app.ServerInfo - Unable to update SYS_SERVER: {}
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:255) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:867) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:360) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:133) ~[tomcat-dbcp.jar:8.0.35]
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532) ~[tomcat-dbcp.jar:8.0.35]
+	at com.haulmont.bali.db.QueryRunner.prepareConnection(QueryRunner.java:258) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.bali.db.QueryRunner.update(QueryRunner.java:627) ~[cuba-global-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo.updateCurrentServer(ServerInfo.java:177) ~[cuba-core-6.3.5.jar:6.3.5]
+	at com.haulmont.cuba.core.app.ServerInfo$1.run(ServerInfo.java:129) [cuba-core-6.3.5.jar:6.3.5]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.8.0_121]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.8.0_121]
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	at org.hsqldb.ClientConnection.<init>(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:211) ~[na:1.8.0_121]
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source) ~[hsqldb-2.2.9.jar:2.2.9]
+	... 19 common frames omitted
+2017-03-26 20:43:00.438 DEBUG [scheduler-1] com.haulmont.cuba.security.app.UserSessions - Removing session due to timeout: 161699d7-8c77-e1d9-009c-3b9c5ee9fdc0 [admin], since: Sun Mar 26 20:12:50 IST 2017, lastUsed: Sun Mar 26 20:12:50 IST 2017
+2017-03-26 20:43:15.908 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 20:12:38 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@19511bf
+2017-03-26 20:43:15.944 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 20:12:34 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@19511bf
+2017-03-26 20:43:16.176 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@19511bf: startup date [Sun Mar 26 20:12:27 IST 2017]; root of context hierarchy
+2017-03-26 20:43:16.182 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2017-03-26 20:43:39.478 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 20:43:39.644 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+2017-03-26 20:43:39.668 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+2017-03-26 20:43:39.997 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2017-03-26 20:43:40.403 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+2017-03-26 20:43:40.807 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@6bc63740: startup date [Sun Mar 26 20:43:40 IST 2017]; root of context hierarchy
+2017-03-26 20:43:52.697 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 20:44:00.291 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 20:44:00.874 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+2017-03-26 20:44:01.694 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Initialize anonymous session
+2017-03-26 20:44:01.699 INFO  [localhost-startStop-1] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2017-03-26 20:44:02.564 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 20:44:02.943 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 378ms
+2017-03-26 20:44:04.938 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2017-03-26 20:44:05.235 INFO  [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+2017-03-26 20:44:05.236 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Anonymous session initialized with id fcdd3533-7fdc-ae29-2af0-3689d5537c8c
+2017-03-26 20:44:05.236 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - AppContext initialized
+2017-03-26 20:44:05.418 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+2017-03-26 20:44:05.443 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 20:44:05 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@6bc63740
+2017-03-26 20:44:05.534 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2017-03-26 20:44:07.282 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1863 ms
+2017-03-26 20:44:08.071 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 20:44:08.081 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+2017-03-26 20:44:08.092 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+2017-03-26 20:44:08.121 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@56fa0fa3: startup date [Sun Mar 26 20:44:08 IST 2017]; root of context hierarchy
+2017-03-26 20:44:11.073 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+2017-03-26 20:44:12.750 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 20:44:14.834 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 20:44:15.557 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2017-03-26 20:44:15.609 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - AppContext initialized
+2017-03-26 20:44:15.647 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+2017-03-26 20:44:15.652 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 20:44:15 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@56fa0fa3
+2017-03-26 20:44:18.270 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 2622 ms
+2017-03-26 20:44:18.276 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+2017-03-26 20:44:18.278 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 20:44:18 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@56fa0fa3
+2017-03-26 20:44:22.090 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 3814 ms
+2017-03-26 20:44:24.318 DEBUG [http-nio-8080-exec-11] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2017-03-26 20:44:24.360 DEBUG [http-nio-8080-exec-11] com.haulmont.cuba.web.App - Initializing application
+2017-03-26 20:44:24.900 DEBUG [http-nio-8080-exec-11/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2017-03-26 20:44:24.904 DEBUG [http-nio-8080-exec-11/app/anonymous] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 20:44:25.008 INFO  [http-nio-8080-exec-11/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 20:44:25.569 INFO  [http-nio-8080-exec-11/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 549ms
+2017-03-26 20:44:26.694 DEBUG [http-nio-8080-exec-11/app/anonymous] com.haulmont.cuba.web.AbstractConnection - Logged in: user=anonymous, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 20:44:30.976 INFO  [http-nio-8080-exec-28/app-core/anonymous] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: d5df1923-5c71-4741-b074-0c1c8fffb694 [admin]
+2017-03-26 20:44:31.068 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2017-03-26 20:44:31.071 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 20:44:31.080 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@4fb4d1a7, timeout=1800sec, UserSession=d5df1923-5c71-4741-b074-0c1c8fffb694 [admin]
+2017-03-26 20:44:31.660 INFO  [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Initializing views
+2017-03-26 20:44:31.666 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+2017-03-26 20:44:31.678 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: com/company/assetmanagement/views.xml
+2017-03-26 20:44:31.738 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2017-03-26 20:44:32.041 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name
+2017-03-26 20:44:32.660 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 20:44:32.764 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 20:44:33.056 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 20:47:57.647 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 20:44:18 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@56fa0fa3
+2017-03-26 20:47:57.671 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 20:44:15 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@56fa0fa3
+2017-03-26 20:47:57.720 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@56fa0fa3: startup date [Sun Mar 26 20:44:08 IST 2017]; root of context hierarchy
+2017-03-26 20:47:57.731 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2017-03-26 21:07:27.925 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:07:27.989 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+2017-03-26 21:07:27.991 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+2017-03-26 21:07:28.193 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2017-03-26 21:07:28.541 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+2017-03-26 21:07:28.860 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@7d725db0: startup date [Sun Mar 26 21:07:28 IST 2017]; root of context hierarchy
+2017-03-26 21:07:39.269 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:07:47.677 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:07:48.311 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+2017-03-26 21:07:49.204 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Initialize anonymous session
+2017-03-26 21:07:49.208 INFO  [localhost-startStop-1] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2017-03-26 21:07:50.222 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:07:50.627 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 405ms
+2017-03-26 21:07:52.666 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2017-03-26 21:07:52.998 INFO  [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+2017-03-26 21:07:52.999 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Anonymous session initialized with id fcdd3533-7fdc-ae29-2af0-3689d5537c8c
+2017-03-26 21:07:53.000 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - AppContext initialized
+2017-03-26 21:07:53.243 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+2017-03-26 21:07:53.280 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 21:07:53 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@7d725db0
+2017-03-26 21:07:53.493 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2017-03-26 21:07:54.732 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1488 ms
+2017-03-26 21:07:55.842 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:07:55.853 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+2017-03-26 21:07:55.855 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+2017-03-26 21:07:55.894 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@69d9b7e6: startup date [Sun Mar 26 21:07:55 IST 2017]; root of context hierarchy
+2017-03-26 21:07:58.813 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+2017-03-26 21:07:59.496 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:08:01.538 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:08:02.471 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2017-03-26 21:08:02.517 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - AppContext initialized
+2017-03-26 21:08:02.550 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+2017-03-26 21:08:02.555 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:08:02 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@69d9b7e6
+2017-03-26 21:08:05.011 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 2460 ms
+2017-03-26 21:08:05.014 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+2017-03-26 21:08:05.016 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:08:05 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@69d9b7e6
+2017-03-26 21:08:08.385 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 3371 ms
+2017-03-26 21:08:12.984 DEBUG [http-nio-8080-exec-24] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2017-03-26 21:08:13.048 DEBUG [http-nio-8080-exec-24] com.haulmont.cuba.web.App - Initializing application
+2017-03-26 21:08:14.993 DEBUG [http-nio-8080-exec-24/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2017-03-26 21:08:14.995 DEBUG [http-nio-8080-exec-24/app/anonymous] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:08:15.098 INFO  [http-nio-8080-exec-24/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:08:15.462 INFO  [http-nio-8080-exec-24/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 363ms
+2017-03-26 21:08:16.564 DEBUG [http-nio-8080-exec-24/app/anonymous] com.haulmont.cuba.web.AbstractConnection - Logged in: user=anonymous, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:08:21.708 INFO  [http-nio-8080-exec-42/app-core/anonymous] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: 8fc9db77-11df-4066-788f-82e30aa8fc76 [admin]
+2017-03-26 21:08:21.764 DEBUG [http-nio-8080-exec-42/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2017-03-26 21:08:21.765 DEBUG [http-nio-8080-exec-42/app/admin] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:08:21.777 DEBUG [http-nio-8080-exec-42/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@1605958d, timeout=1800sec, UserSession=8fc9db77-11df-4066-788f-82e30aa8fc76 [admin]
+2017-03-26 21:08:22.415 INFO  [http-nio-8080-exec-42/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Initializing views
+2017-03-26 21:08:22.425 DEBUG [http-nio-8080-exec-42/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+2017-03-26 21:08:22.443 DEBUG [http-nio-8080-exec-42/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: com/company/assetmanagement/views.xml
+2017-03-26 21:08:22.500 DEBUG [http-nio-8080-exec-42/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2017-03-26 21:08:22.721 DEBUG [http-nio-8080-exec-42/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name
+2017-03-26 21:08:23.379 DEBUG [http-nio-8080-exec-42/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:08:23.471 DEBUG [http-nio-8080-exec-42/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:08:23.616 DEBUG [http-nio-8080-exec-42/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:08:23.628 DEBUG [http-nio-8080-exec-42/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:08:23.745 DEBUG [http-nio-8080-exec-42/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:09:22.763 INFO  [scheduler-1] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:09:37.766 INFO  [scheduler-7] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:10:02.769 INFO  [scheduler-7] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:10:07.202 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:08:05 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@69d9b7e6
+2017-03-26 21:10:07.303 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:08:02 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@69d9b7e6
+2017-03-26 21:10:07.454 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@69d9b7e6: startup date [Sun Mar 26 21:07:55 IST 2017]; root of context hierarchy
+2017-03-26 21:10:07.464 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2017-03-26 21:10:32.622 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:10:32.762 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+2017-03-26 21:10:32.765 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+2017-03-26 21:10:33.154 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2017-03-26 21:10:33.568 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+2017-03-26 21:10:33.920 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@710079cb: startup date [Sun Mar 26 21:10:33 IST 2017]; root of context hierarchy
+2017-03-26 21:10:47.095 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:10:54.594 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:10:55.111 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+2017-03-26 21:10:55.947 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Initialize anonymous session
+2017-03-26 21:10:55.950 INFO  [localhost-startStop-1] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2017-03-26 21:10:56.903 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:10:57.302 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 397ms
+2017-03-26 21:10:59.114 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2017-03-26 21:10:59.358 INFO  [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+2017-03-26 21:10:59.359 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Anonymous session initialized with id fcdd3533-7fdc-ae29-2af0-3689d5537c8c
+2017-03-26 21:10:59.360 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - AppContext initialized
+2017-03-26 21:10:59.453 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+2017-03-26 21:10:59.476 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 21:10:59 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@710079cb
+2017-03-26 21:10:59.614 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2017-03-26 21:11:01.054 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1601 ms
+2017-03-26 21:11:01.855 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:11:01.869 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+2017-03-26 21:11:01.876 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+2017-03-26 21:11:01.924 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f859da7: startup date [Sun Mar 26 21:11:01 IST 2017]; root of context hierarchy
+2017-03-26 21:11:04.849 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+2017-03-26 21:11:05.852 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:11:08.261 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:11:09.365 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2017-03-26 21:11:09.416 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - AppContext initialized
+2017-03-26 21:11:09.462 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+2017-03-26 21:11:09.467 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:11:09 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f859da7
+2017-03-26 21:11:11.795 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 2333 ms
+2017-03-26 21:11:11.799 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+2017-03-26 21:11:11.802 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:11:11 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f859da7
+2017-03-26 21:11:15.902 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 4102 ms
+2017-03-26 21:11:18.815 DEBUG [http-nio-8080-exec-38] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2017-03-26 21:11:18.861 DEBUG [http-nio-8080-exec-38] com.haulmont.cuba.web.App - Initializing application
+2017-03-26 21:11:19.375 DEBUG [http-nio-8080-exec-38/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2017-03-26 21:11:19.378 DEBUG [http-nio-8080-exec-38/app/anonymous] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:11:19.412 INFO  [http-nio-8080-exec-38/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:11:19.882 INFO  [http-nio-8080-exec-38/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 467ms
+2017-03-26 21:11:20.748 DEBUG [http-nio-8080-exec-38/app/anonymous] com.haulmont.cuba.web.AbstractConnection - Logged in: user=anonymous, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:11:24.041 INFO  [http-nio-8080-exec-28/app-core/anonymous] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: 6ad58211-00b8-484d-0782-c90712ee24d4 [admin]
+2017-03-26 21:11:24.137 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2017-03-26 21:11:24.138 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:11:24.157 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@3b61d9a1, timeout=1800sec, UserSession=6ad58211-00b8-484d-0782-c90712ee24d4 [admin]
+2017-03-26 21:11:24.957 INFO  [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Initializing views
+2017-03-26 21:11:24.965 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+2017-03-26 21:11:24.986 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: com/company/assetmanagement/views.xml
+2017-03-26 21:11:25.053 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2017-03-26 21:11:25.231 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name
+2017-03-26 21:11:25.953 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:11:26.105 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:11:26.384 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:11:26.423 DEBUG [http-nio-8080-exec-28/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:11:26.634 DEBUG [http-nio-8080-exec-28/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:11:49.652 INFO  [scheduler-3] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:12:29.658 INFO  [scheduler-1] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:12:49.660 INFO  [scheduler-4] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:12:54.662 INFO  [scheduler-1] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:12:59.663 INFO  [scheduler-5] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:13:01.105 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:11:11 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f859da7
+2017-03-26 21:13:01.157 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:11:09 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f859da7
+2017-03-26 21:13:01.199 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@6f859da7: startup date [Sun Mar 26 21:11:01 IST 2017]; root of context hierarchy
+2017-03-26 21:13:01.210 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2017-03-26 21:13:17.491 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:13:17.562 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+2017-03-26 21:13:17.564 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+2017-03-26 21:13:17.736 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2017-03-26 21:13:18.057 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+2017-03-26 21:13:18.389 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@79ae995f: startup date [Sun Mar 26 21:13:18 IST 2017]; root of context hierarchy
+2017-03-26 21:13:28.509 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:13:36.471 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:13:37.100 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+2017-03-26 21:13:37.989 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Initialize anonymous session
+2017-03-26 21:13:37.993 INFO  [localhost-startStop-1] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2017-03-26 21:13:38.711 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:13:39.057 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 346ms
+2017-03-26 21:13:41.200 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2017-03-26 21:13:41.503 INFO  [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+2017-03-26 21:13:41.507 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Anonymous session initialized with id fcdd3533-7fdc-ae29-2af0-3689d5537c8c
+2017-03-26 21:13:41.507 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - AppContext initialized
+2017-03-26 21:13:41.696 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+2017-03-26 21:13:41.726 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 21:13:41 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@79ae995f
+2017-03-26 21:13:41.821 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2017-03-26 21:13:43.018 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1322 ms
+2017-03-26 21:13:43.721 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:13:43.733 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+2017-03-26 21:13:43.736 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+2017-03-26 21:13:43.755 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@532d528b: startup date [Sun Mar 26 21:13:43 IST 2017]; root of context hierarchy
+2017-03-26 21:13:46.569 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+2017-03-26 21:13:47.273 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:13:49.241 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:13:49.816 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2017-03-26 21:13:50.276 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - AppContext initialized
+2017-03-26 21:13:50.320 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+2017-03-26 21:13:50.324 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:13:50 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@532d528b
+2017-03-26 21:13:52.498 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 2178 ms
+2017-03-26 21:13:52.502 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+2017-03-26 21:13:52.504 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:13:52 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@532d528b
+2017-03-26 21:13:55.847 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 3345 ms
+2017-03-26 21:13:57.836 DEBUG [http-nio-8080-exec-8] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2017-03-26 21:13:57.851 DEBUG [http-nio-8080-exec-8] com.haulmont.cuba.web.App - Initializing application
+2017-03-26 21:13:58.424 DEBUG [http-nio-8080-exec-8/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2017-03-26 21:13:58.429 DEBUG [http-nio-8080-exec-8/app/anonymous] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:13:58.507 INFO  [http-nio-8080-exec-8/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:13:59.056 INFO  [http-nio-8080-exec-8/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 548ms
+2017-03-26 21:13:59.990 DEBUG [http-nio-8080-exec-8/app/anonymous] com.haulmont.cuba.web.AbstractConnection - Logged in: user=anonymous, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:14:04.918 INFO  [http-nio-8080-exec-43/app-core/anonymous] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: 418f2711-ad13-2014-22c1-d4f8b152d89f [admin]
+2017-03-26 21:14:05.002 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2017-03-26 21:14:05.004 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:14:05.015 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@7ecdd1e, timeout=1800sec, UserSession=418f2711-ad13-2014-22c1-d4f8b152d89f [admin]
+2017-03-26 21:14:05.662 INFO  [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Initializing views
+2017-03-26 21:14:05.673 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+2017-03-26 21:14:05.700 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: com/company/assetmanagement/views.xml
+2017-03-26 21:14:05.764 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2017-03-26 21:14:06.000 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name
+2017-03-26 21:14:06.502 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:14:06.561 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:14:06.745 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:14:06.765 DEBUG [http-nio-8080-exec-43/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:14:06.960 DEBUG [http-nio-8080-exec-43/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:15:45.485 INFO  [scheduler-6] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:16:55.494 INFO  [scheduler-10] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:16:59.125 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:13:52 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@532d528b
+2017-03-26 21:16:59.194 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:13:50 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@532d528b
+2017-03-26 21:16:59.232 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@532d528b: startup date [Sun Mar 26 21:13:43 IST 2017]; root of context hierarchy
+2017-03-26 21:16:59.235 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2017-03-26 21:17:14.405 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:17:14.472 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+2017-03-26 21:17:14.474 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+2017-03-26 21:17:14.629 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2017-03-26 21:17:14.945 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+2017-03-26 21:17:15.233 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@30196c11: startup date [Sun Mar 26 21:17:15 IST 2017]; root of context hierarchy
+2017-03-26 21:17:25.027 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:17:32.680 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:17:33.293 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+2017-03-26 21:17:34.182 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Initialize anonymous session
+2017-03-26 21:17:34.191 INFO  [localhost-startStop-1] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2017-03-26 21:17:35.012 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:17:35.371 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 358ms
+2017-03-26 21:17:37.284 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2017-03-26 21:17:37.490 INFO  [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+2017-03-26 21:17:37.491 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Anonymous session initialized with id fcdd3533-7fdc-ae29-2af0-3689d5537c8c
+2017-03-26 21:17:37.491 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - AppContext initialized
+2017-03-26 21:17:37.559 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+2017-03-26 21:17:37.599 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 21:17:37 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@30196c11
+2017-03-26 21:17:37.684 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2017-03-26 21:17:38.930 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1367 ms
+2017-03-26 21:17:39.651 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:17:39.664 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+2017-03-26 21:17:39.667 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+2017-03-26 21:17:39.699 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@784d1999: startup date [Sun Mar 26 21:17:39 IST 2017]; root of context hierarchy
+2017-03-26 21:17:42.429 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+2017-03-26 21:17:43.200 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:17:45.025 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:17:45.619 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2017-03-26 21:17:45.690 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - AppContext initialized
+2017-03-26 21:17:46.203 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+2017-03-26 21:17:46.207 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:17:46 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@784d1999
+2017-03-26 21:17:48.576 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 2373 ms
+2017-03-26 21:17:48.580 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+2017-03-26 21:17:48.583 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:17:48 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@784d1999
+2017-03-26 21:17:52.152 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 3571 ms
+2017-03-26 21:17:54.346 DEBUG [http-nio-8080-exec-21] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2017-03-26 21:17:54.364 DEBUG [http-nio-8080-exec-21] com.haulmont.cuba.web.App - Initializing application
+2017-03-26 21:17:54.811 DEBUG [http-nio-8080-exec-21/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2017-03-26 21:17:54.811 DEBUG [http-nio-8080-exec-21/app/anonymous] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:17:54.841 INFO  [http-nio-8080-exec-21/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:17:55.634 INFO  [http-nio-8080-exec-21/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 792ms
+2017-03-26 21:17:56.390 DEBUG [http-nio-8080-exec-21/app/anonymous] com.haulmont.cuba.web.AbstractConnection - Logged in: user=anonymous, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:18:00.448 INFO  [http-nio-8080-exec-38/app-core/anonymous] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: 6bddd475-b595-62fb-1951-b1bf577579ed [admin]
+2017-03-26 21:18:00.525 DEBUG [http-nio-8080-exec-38/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2017-03-26 21:18:00.536 DEBUG [http-nio-8080-exec-38/app/admin] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:18:00.550 DEBUG [http-nio-8080-exec-38/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@1c8bd8ca, timeout=1800sec, UserSession=6bddd475-b595-62fb-1951-b1bf577579ed [admin]
+2017-03-26 21:18:01.186 INFO  [http-nio-8080-exec-38/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Initializing views
+2017-03-26 21:18:01.193 DEBUG [http-nio-8080-exec-38/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+2017-03-26 21:18:01.222 DEBUG [http-nio-8080-exec-38/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: com/company/assetmanagement/views.xml
+2017-03-26 21:18:01.468 DEBUG [http-nio-8080-exec-38/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2017-03-26 21:18:01.665 DEBUG [http-nio-8080-exec-38/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name
+2017-03-26 21:18:02.207 DEBUG [http-nio-8080-exec-38/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:18:02.311 DEBUG [http-nio-8080-exec-38/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:18:02.595 DEBUG [http-nio-8080-exec-38/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:18:02.619 DEBUG [http-nio-8080-exec-38/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:18:02.821 DEBUG [http-nio-8080-exec-38/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:19:46.172 INFO  [scheduler-2] com.haulmont.cuba.core.sys.TriggerFilesProcessor - Calling cuba_WindowConfig.reset
+2017-03-26 21:19:47.339 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:17:48 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@784d1999
+2017-03-26 21:19:47.386 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:17:46 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@784d1999
+2017-03-26 21:19:47.430 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@784d1999: startup date [Sun Mar 26 21:17:39 IST 2017]; root of context hierarchy
+2017-03-26 21:19:47.438 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2017-03-26 21:20:01.979 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:20:02.043 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+2017-03-26 21:20:02.046 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+2017-03-26 21:20:02.203 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2017-03-26 21:20:02.509 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+2017-03-26 21:20:02.791 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@7d725db0: startup date [Sun Mar 26 21:20:02 IST 2017]; root of context hierarchy
+2017-03-26 21:20:13.019 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:20:20.427 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:20:21.055 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+2017-03-26 21:20:21.920 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Initialize anonymous session
+2017-03-26 21:20:21.924 INFO  [localhost-startStop-1] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2017-03-26 21:20:22.738 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:20:23.181 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 443ms
+2017-03-26 21:20:25.382 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2017-03-26 21:20:25.727 INFO  [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+2017-03-26 21:20:25.728 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Anonymous session initialized with id fcdd3533-7fdc-ae29-2af0-3689d5537c8c
+2017-03-26 21:20:25.728 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - AppContext initialized
+2017-03-26 21:20:25.818 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+2017-03-26 21:20:25.840 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 21:20:25 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@7d725db0
+2017-03-26 21:20:25.936 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2017-03-26 21:20:27.196 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1376 ms
+2017-03-26 21:20:27.882 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:20:27.895 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+2017-03-26 21:20:27.897 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+2017-03-26 21:20:27.924 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@bd4d45b: startup date [Sun Mar 26 21:20:27 IST 2017]; root of context hierarchy
+2017-03-26 21:20:30.287 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+2017-03-26 21:20:30.992 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:20:33.032 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:20:33.703 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2017-03-26 21:20:34.135 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - AppContext initialized
+2017-03-26 21:20:34.189 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+2017-03-26 21:20:34.194 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:20:34 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@bd4d45b
+2017-03-26 21:20:36.537 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 2348 ms
+2017-03-26 21:20:36.548 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+2017-03-26 21:20:36.554 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:20:36 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@bd4d45b
+2017-03-26 21:20:40.211 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 3661 ms
+2017-03-26 21:20:42.292 DEBUG [http-nio-8080-exec-39] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2017-03-26 21:20:42.308 DEBUG [http-nio-8080-exec-39] com.haulmont.cuba.web.App - Initializing application
+2017-03-26 21:20:42.866 DEBUG [http-nio-8080-exec-39/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2017-03-26 21:20:42.867 DEBUG [http-nio-8080-exec-39/app/anonymous] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:20:42.892 INFO  [http-nio-8080-exec-39/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:20:43.442 INFO  [http-nio-8080-exec-39/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 550ms
+2017-03-26 21:20:44.558 DEBUG [http-nio-8080-exec-39/app/anonymous] com.haulmont.cuba.web.AbstractConnection - Logged in: user=anonymous, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:20:49.843 INFO  [http-nio-8080-exec-7/app-core/anonymous] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: b1652eb0-71c4-f936-3793-3e202e516cf9 [admin]
+2017-03-26 21:20:49.936 DEBUG [http-nio-8080-exec-7/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2017-03-26 21:20:49.938 DEBUG [http-nio-8080-exec-7/app/admin] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:20:49.949 DEBUG [http-nio-8080-exec-7/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@536220be, timeout=1800sec, UserSession=b1652eb0-71c4-f936-3793-3e202e516cf9 [admin]
+2017-03-26 21:20:50.712 INFO  [http-nio-8080-exec-7/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Initializing views
+2017-03-26 21:20:50.719 DEBUG [http-nio-8080-exec-7/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+2017-03-26 21:20:50.734 DEBUG [http-nio-8080-exec-7/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: com/company/assetmanagement/views.xml
+2017-03-26 21:20:50.831 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2017-03-26 21:20:51.046 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name
+2017-03-26 21:20:51.658 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:20:51.727 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:20:51.960 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:20:51.979 DEBUG [http-nio-8080-exec-7/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:20:52.169 DEBUG [http-nio-8080-exec-7/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:23:58.903 DEBUG [http-nio-8080-exec-12/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:23:59.047 INFO  [ClientCacheManager-pool-3-thread-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fdade5fc-c0f6-1042-de09-e6b85caeb7ab [admin]
+2017-03-26 21:24:18.020 DEBUG [http-nio-8080-exec-26/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[Elango], removeInstances=[]
+2017-03-26 21:24:18.038 DEBUG [http-nio-8080-exec-26/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loading entities
+2017-03-26 21:24:18.063 DEBUG [http-nio-8080-exec-26/app-core/admin] com.haulmont.cuba.security.app.EntityLog - Loaded: entitiesAuto=0, entitiesManual=0
+2017-03-26 21:24:18.201 DEBUG [http-nio-8080-exec-26/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:24:18.218 DEBUG [http-nio-8080-exec-26/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:24:25.706 DEBUG [http-nio-8080-exec-1/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:24:44.982 DEBUG [http-nio-8080-exec-4/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[Ashok], removeInstances=[]
+2017-03-26 21:24:45.046 DEBUG [http-nio-8080-exec-4/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:24:45.070 DEBUG [http-nio-8080-exec-4/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:24:55.768 DEBUG [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[], removeInstances=[Elango]
+2017-03-26 21:24:55.775 INFO  [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.sys.ViewRepositoryImpl - Initializing views
+2017-03-26 21:24:55.962 DEBUG [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:24:55.974 DEBUG [http-nio-8080-exec-29/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:25:01.833 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - commit: commitInstances=[], removeInstances=[Ashok]
+2017-03-26 21:25:01.937 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:25:01.948 DEBUG [http-nio-8080-exec-19/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:25:41.534 INFO  [http-nio-8080-exec-12/app-core/admin] com.haulmont.cuba.core.app.PersistenceManager - Loading statistics cache
+2017-03-26 21:25:41.942 DEBUG [http-nio-8080-exec-12/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Filter, view=com.haulmont.cuba.security.entity.FilterEntity/app, query=select f from sec$Filter f left join f.user u where f.componentId = :component and (u.id = :userId or u is null) order by f.name
+2017-03-26 21:25:42.404 DEBUG [http-nio-8080-exec-12/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$Presentation, view=com.haulmont.cuba.security.entity.Presentation/app, query=select p from sec$Presentation p where p.componentId = :component and (p.user is null or p.user.id = :userId)
+2017-03-26 21:25:43.458 DEBUG [http-nio-8080-exec-12/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$User, view=com.haulmont.cuba.security.entity.User/user.browse, query=select u from sec$User u, max=50
+2017-03-26 21:30:45.870 DEBUG [http-nio-8080-exec-15/app/admin] com.haulmont.cuba.web.App - Ping session
+2017-03-26 21:41:21.208 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:20:36 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@bd4d45b
+2017-03-26 21:41:21.297 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:20:34 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@bd4d45b
+2017-03-26 21:41:21.431 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@bd4d45b: startup date [Sun Mar 26 21:20:27 IST 2017]; root of context hierarchy
+2017-03-26 21:41:21.437 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'
+2017-03-26 21:41:47.738 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:41:47.931 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:cuba-app.properties
+2017-03-26 21:41:47.939 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - Loading app properties from classpath:com/company/assetmanagement/app.properties
+2017-03-26 21:41:48.303 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - DbmsType of the main database is set to hsql
+2017-03-26 21:41:48.668 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.persistence.PersistenceConfigProcessor - Creating file /home/elangovan/Asset_Management/build/tomcat/work/app-core/persistence.xml
+2017-03-26 21:41:49.147 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaCoreApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaCoreApplicationContext@216581ff: startup date [Sun Mar 26 21:41:49 IST 2017]; root of context hierarchy
+2017-03-26 21:42:02.943 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:42:10.217 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:42:10.856 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app-core.cuba:type=PersistenceManager, app-core.cuba:type=ConfigStorage, app-core.cuba:type=UserSessions, app-core.cuba:type=UniqueNumbers, app-core.cuba:type=Emailer, app-core.cuba:type=EntityLog, app-core.cuba:type=FileStorage, app-core.cuba:type=LockManager, app-core.cuba:type=CachingFacade, app-core.cuba:type=ClusterManager, app-core.cuba:type=ScriptingManager, app-core.cuba:type=ServerInfo, app-core.cuba:type=Scheduling, app-core.cuba:type=ObjectsCacheManager, app-core.cuba:type=PasswordEncryptionSupport, app-core.cuba:type=JmxNodeIdentifier, app-core.cuba:type=JmxLogControl, app-core.cuba:type=ClassLoaderManager, app-core.cuba:type=StatisticsCounter, app-core.cuba:type=BruteForceProtection, app-core.cuba:type=QueryCacheSupport, app-core.cuba:type=IdpSessions]
+2017-03-26 21:42:11.985 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Initialize anonymous session
+2017-03-26 21:42:11.989 INFO  [localhost-startStop-1] com.haulmont.cuba.core.app.ConfigStorage - Loading DB-stored app properties cache
+2017-03-26 21:42:13.051 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:42:13.377 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 326ms
+2017-03-26 21:42:15.368 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.DefaultPermissionValuesConfig - Initializing default permission values
+2017-03-26 21:42:15.567 INFO  [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: fcdd3533-7fdc-ae29-2af0-3689d5537c8c [anonymous]
+2017-03-26 21:42:15.568 DEBUG [localhost-startStop-1] com.haulmont.cuba.security.app.LoginWorkerBean - Anonymous session initialized with id fcdd3533-7fdc-ae29-2af0-3689d5537c8c
+2017-03-26 21:42:15.568 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppContextLoader - AppContext initialized
+2017-03-26 21:42:15.683 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization started
+2017-03-26 21:42:15.703 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaDefaultXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'remoting-servlet': startup date [Sun Mar 26 21:42:15 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaCoreApplicationContext@216581ff
+2017-03-26 21:42:15.826 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator - Configuring remote services
+2017-03-26 21:42:17.358 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.remoting.RemotingServlet - FrameworkServlet 'remoting': initialization completed in 1674 ms
+2017-03-26 21:42:18.193 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.AppComponents - Using app components: [com.haulmont.cuba]
+2017-03-26 21:42:18.208 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:cuba-web-app.properties
+2017-03-26 21:42:18.210 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - Loading app properties from classpath:com/company/assetmanagement/web-app.properties
+2017-03-26 21:42:18.229 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Refreshing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4eb1b66: startup date [Sun Mar 26 21:42:18 IST 2017]; root of context hierarchy
+2017-03-26 21:42:21.220 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator - Configuring proxy beans for local service invocations: [cuba_LoginService, cuba_ServerInfoService, cuba_UserSettingService, cuba_UserManagementService, cuba_DataService, cuba_ConfigStorageService, cuba_PersistenceManagerService, cuba_LockService, cuba_UserSessionService, cuba_FoldersService, cuba_EmailService, cuba_FileStorageService, cuba_EntitySnapshotService, cuba_UniqueNumbersService, cuba_LocalizedMessageService, cuba_ResourceService, cuba_ScheduledTasksService, cuba_EntityLogService, cuba_TestingService, cuba_ObjectsCacheManagerService, cuba_DomainDescriptionService, cuba_RelatedEntitiesService, cuba_EntitySqlGenerationService, cuba_NumberIdService, cuba_QueryResultsService, cuba_DynamicAttributesCacheService, cuba_EntityRestoreService, cuba_LocalFileExchangeService, cuba_EntityImportExportService, cuba_ScreenProfilerService, cuba_ServerTokenStore, cuba_IdpService]
+2017-03-26 21:42:22.418 INFO  [localhost-startStop-1] com.haulmont.chile.core.datatypes.Datatypes - Can't find /datatypes.xml, using default datatypes settings
+2017-03-26 21:42:24.826 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Initializing ExecutorService  'scheduler'
+2017-03-26 21:42:25.612 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.jmx.MBeanExporter - Registering beans for JMX exposure: [app.cuba:type=ConfigStorage, app.cuba:type=CachingFacade, app.cuba:type=FileUploading, app.cuba:type=JmxNodeIdentifier, app.cuba:type=JmxLogControl, app.cuba:type=ClassLoaderManager, app.cuba:type=StatisticsCounter]
+2017-03-26 21:42:25.678 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.WebAppContextLoader - AppContext initialized
+2017-03-26 21:42:25.725 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+2017-03-26 21:42:25.730 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:42:25 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4eb1b66
+2017-03-26 21:42:28.470 INFO  [localhost-startStop-1] com.haulmont.cuba.web.sys.CubaDispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 2745 ms
+2017-03-26 21:42:28.473 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization started
+2017-03-26 21:42:28.475 INFO  [localhost-startStop-1] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:42:28 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4eb1b66
+2017-03-26 21:42:32.283 INFO  [localhost-startStop-1] com.haulmont.restapi.sys.CubaRestApiServlet - FrameworkServlet 'rest_api': initialization completed in 3810 ms
+2017-03-26 21:42:34.343 DEBUG [http-nio-8080-exec-1] com.haulmont.cuba.gui.theme.ThemeConstantsRepository - Loading theme constants
+2017-03-26 21:42:34.378 DEBUG [http-nio-8080-exec-1] com.haulmont.cuba.web.App - Initializing application
+2017-03-26 21:42:35.307 DEBUG [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: false
+2017-03-26 21:42:35.308 DEBUG [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:42:35.413 INFO  [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Initializing metadata
+2017-03-26 21:42:35.769 INFO  [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.core.sys.MetadataImpl - Metadata initialized in 355ms
+2017-03-26 21:42:36.756 DEBUG [http-nio-8080-exec-1/app/anonymous] com.haulmont.cuba.web.AbstractConnection - Logged in: user=anonymous, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:42:40.313 INFO  [http-nio-8080-exec-34/app-core/anonymous] com.haulmont.cuba.security.app.LoginWorkerBean - Logged in: 6de3ea6b-f32a-3362-4387-834c17551b5c [admin]
+2017-03-26 21:42:40.364 DEBUG [http-nio-8080-exec-34/app/admin] com.haulmont.cuba.web.DefaultApp - connectionStateChanged connected: true, authenticated: true
+2017-03-26 21:42:40.365 DEBUG [http-nio-8080-exec-34/app/admin] com.haulmont.cuba.web.App - Closing all windows
+2017-03-26 21:42:40.376 DEBUG [http-nio-8080-exec-34/app/admin] com.haulmont.cuba.web.DefaultApp - Session reinitialized: HttpSession=org.apache.catalina.session.StandardSessionFacade@6fb3c1bb, timeout=1800sec, UserSession=6de3ea6b-f32a-3362-4387-834c17551b5c [admin]
+2017-03-26 21:42:40.816 INFO  [http-nio-8080-exec-34/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Initializing views
+2017-03-26 21:42:40.821 DEBUG [http-nio-8080-exec-34/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: cuba-views.xml
+2017-03-26 21:42:40.833 DEBUG [http-nio-8080-exec-34/app/admin] com.haulmont.cuba.client.sys.ViewRepositoryClientImpl - Deploying views config: com/company/assetmanagement/views.xml
+2017-03-26 21:42:40.880 DEBUG [http-nio-8080-exec-34/app-core/admin] com.haulmont.cuba.core.app.StoreFactory - No implementation is specified for _MAIN_ store, using RdbmsStore
+2017-03-26 21:42:41.041 DEBUG [http-nio-8080-exec-34/app-core/admin] com.haulmont.cuba.core.app.RdbmsStore - loadList: metaClass=sec$UserSubstitution, view=com.haulmont.cuba.security.entity.UserSubstitution/app, query=select us from sec$UserSubstitution us where us.user.id = :userId and (us.endDate is null or us.endDate >= :currentDate) and (us.startDate is null or us.startDate <= :currentDate) and (us.substitutedUser.active = true or us.substitutedUser.active is null) order by us.substitutedUser.name
+2017-03-26 21:42:41.824 DEBUG [http-nio-8080-exec-34/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:42:41.959 DEBUG [http-nio-8080-exec-34/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:42:42.145 DEBUG [http-nio-8080-exec-34/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading AppFolders
+2017-03-26 21:42:42.175 DEBUG [http-nio-8080-exec-34/app-core/admin] com.haulmont.cuba.core.app.FoldersServiceBean - Loading SearchFolders
+2017-03-26 21:42:42.426 DEBUG [http-nio-8080-exec-34/app/admin] com.haulmont.cuba.web.AbstractConnection - Logged in: user=admin, ip=127.0.0.1, clientInfo=Web (localhost:8080/app) Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-03-26 21:43:09.036 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'rest_api-servlet': startup date [Sun Mar 26 21:42:28 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4eb1b66
+2017-03-26 21:43:09.074 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaXmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Mar 26 21:42:25 IST 2017]; parent: com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4eb1b66
+2017-03-26 21:43:09.121 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext - Closing com.haulmont.cuba.core.sys.CubaClassPathXmlApplicationContext@4eb1b66: startup date [Sun Mar 26 21:42:18 IST 2017]; root of context hierarchy
+2017-03-26 21:43:09.126 INFO  [localhost-startStop-2] com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler - Shutting down ExecutorService 'scheduler'

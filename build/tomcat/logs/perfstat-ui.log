@@ -163,3 +163,203 @@ mainWindow#ready                                         0.0           0        
 mainWindow#uiPermissions                                 0.0           0           0         0.0           1
 mainWindow#xml                                          15.0          15          15         0.0           1
 
+Performance Statistics   2017-03-26 20:12:00 - 2017-03-26 20:14:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        20.0          20          20         0.0           1
+loginWindow#inject                                      18.0          18          18         0.0           1
+loginWindow#load                                       466.0         466         466         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         40.0          40          40         0.0           1
+mainWindow#init                                        250.0         250         250         0.0           1
+mainWindow#inject                                       15.0          15          15         0.0           1
+mainWindow#load                                        307.0         307         307         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          13.0          13          13         0.0           1
+
+Performance Statistics   2017-03-26 20:14:00 - 2017-03-26 20:16:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:16:00 - 2017-03-26 20:18:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:18:00 - 2017-03-26 20:20:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:20:00 - 2017-03-26 20:22:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:22:00 - 2017-03-26 20:24:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:24:00 - 2017-03-26 20:26:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:26:00 - 2017-03-26 20:28:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:28:00 - 2017-03-26 20:30:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:30:00 - 2017-03-26 20:32:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:32:00 - 2017-03-26 20:34:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:34:00 - 2017-03-26 20:36:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:36:00 - 2017-03-26 20:38:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:38:00 - 2017-03-26 20:40:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:40:00 - 2017-03-26 20:42:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 20:44:00 - 2017-03-26 20:46:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        25.0          25          25         0.0           1
+loginWindow#inject                                      17.0          17          17         0.0           1
+loginWindow#load                                       759.0         759         759         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         56.0          56          56         0.0           1
+mainWindow#init                                         51.0          51          51         0.0           1
+mainWindow#inject                                        9.0           9           9         0.0           1
+mainWindow#load                                        449.0         449         449         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          15.0          15          15         0.0           1
+
+Performance Statistics   2017-03-26 21:08:00 - 2017-03-26 21:10:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        22.0          22          22         0.0           1
+loginWindow#inject                                      16.0          16          16         0.0           1
+loginWindow#load                                       816.0         816         816         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         59.0          59          59         0.0           1
+mainWindow#init                                         61.0          61          61         0.0           1
+mainWindow#inject                                       11.0          11          11         0.0           1
+mainWindow#load                                        501.0         501         501         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          12.0          12          12         0.0           1
+
+Performance Statistics   2017-03-26 21:10:00 - 2017-03-26 21:12:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        23.0          23          23         0.0           1
+loginWindow#inject                                      19.0          19          19         0.0           1
+loginWindow#load                                       542.0         542         542         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         35.0          35          35         0.0           1
+mainWindow#init                                         91.0          91          91         0.0           1
+mainWindow#inject                                       15.0          15          15         0.0           1
+mainWindow#load                                        599.0         599         599         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          15.0          15          15         0.0           1
+
+Performance Statistics   2017-03-26 21:12:00 - 2017-03-26 21:14:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        19.0          19          19         0.0           1
+loginWindow#inject                                      17.0          17          17         0.0           1
+loginWindow#load                                       674.0         674         674         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         26.0          26          26         0.0           1
+
+Performance Statistics   2017-03-26 21:14:00 - 2017-03-26 21:16:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+mainWindow#init                                         74.0          74          74         0.0           1
+mainWindow#inject                                       11.0          11          11         0.0           1
+mainWindow#load                                        481.0         481         481         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          12.0          12          12         0.0           1
+
+Performance Statistics   2017-03-26 21:16:00 - 2017-03-26 21:18:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        21.0          21          21         0.0           1
+loginWindow#inject                                      14.0          14          14         0.0           1
+loginWindow#load                                       452.0         452         452         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         31.0          31          31         0.0           1
+
+Performance Statistics   2017-03-26 21:18:00 - 2017-03-26 21:20:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+mainWindow#init                                         80.0          80          80         0.0           1
+mainWindow#inject                                       15.0          15          15         0.0           1
+mainWindow#load                                        440.0         440         440         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          12.0          12          12         0.0           1
+
+Performance Statistics   2017-03-26 21:20:00 - 2017-03-26 21:22:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        26.0          26          26         0.0           1
+loginWindow#inject                                      46.0          46          46         0.0           1
+loginWindow#load                                       791.0         791         791         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                        115.0         115         115         0.0           1
+mainWindow#init                                         80.0          80          80         0.0           1
+mainWindow#inject                                       14.0          14          14         0.0           1
+mainWindow#load                                        570.0         570         570         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          15.0          15          15         0.0           1
+
+Performance Statistics   2017-03-26 21:22:00 - 2017-03-26 21:24:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 21:24:00 - 2017-03-26 21:26:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+sec$User.browse#companion                               10.0          10          10         0.0           1
+sec$User.browse#init                                    33.0          33          33         0.0           1
+sec$User.browse#inject                                  45.0          45          45         0.0           1
+sec$User.browse#load                                   711.0         711         711         0.0           1
+sec$User.browse#ready                                    0.0           0           0         0.0           1
+sec$User.browse#uiPermissions                            0.0           0           0         0.0           1
+sec$User.browse#xml                                      8.0           8           8         0.0           1
+sec$User.browse@usersDs                                552.0         552         552         0.0           1
+
+Performance Statistics   2017-03-26 21:26:00 - 2017-03-26 21:28:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 21:28:00 - 2017-03-26 21:30:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 21:30:00 - 2017-03-26 21:32:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 21:32:00 - 2017-03-26 21:34:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 21:34:00 - 2017-03-26 21:36:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 21:36:00 - 2017-03-26 21:38:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2017-03-26 21:42:00 - 2017-03-26 21:44:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        30.0          30          30         0.0           1
+loginWindow#inject                                      20.0          20          20         0.0           1
+loginWindow#load                                       698.0         698         698         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                0.0           0           0         0.0           1
+loginWindow#xml                                         29.0          29          29         0.0           1
+mainWindow#init                                         46.0          46          46         0.0           1
+mainWindow#inject                                        6.0           6           6         0.0           1
+mainWindow#load                                        332.0         332         332         0.0           1
+mainWindow#ready                                         0.0           0           0         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                          10.0          10          10         0.0           1
+
